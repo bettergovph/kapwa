@@ -1,0 +1,436 @@
+/* Kapwa Design System Theme */
+@theme kapwa {
+  /* Typography */
+  --font-family-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-family-mono: 'Roboto Mono', monospace;
+  --font-family-display: 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+  /* Kapwa Brand Colors */
+  --color-kapwa-brand-50: #ebf6ff;
+  --color-kapwa-brand-100: #d1ecff;
+  --color-kapwa-brand-200: #aedfff;
+  --color-kapwa-brand-300: #76cdff;
+  --color-kapwa-brand-400: #35b0ff;
+  --color-kapwa-brand-500: #0787ff;
+  --color-kapwa-brand-600: #005df5;
+  --color-kapwa-brand-700: #0052d6;
+  --color-kapwa-brand-800: #004ac2;
+  --color-kapwa-brand-900: #0038a8;
+  --color-kapwa-brand-950: #062365;
+
+  /* Kapwa Primitive Colors */
+  --color-kapwa-red-50: #fff1f2;
+  --color-kapwa-red-100: #ffe0e3;
+  --color-kapwa-red-200: #ffc6cc;
+  --color-kapwa-red-300: #ff9fa9;
+  --color-kapwa-red-400: #ff6878;
+  --color-kapwa-red-500: #fb384d;
+  --color-kapwa-red-600: #e9192f;
+  --color-kapwa-red-700: #ce1226;
+  --color-kapwa-red-800: #a21221;
+  --color-kapwa-red-900: #861622;
+  --color-kapwa-red-950: #49060d;
+
+  --color-kapwa-green-50: #effef5;
+  --color-kapwa-green-100: #d9ffea;
+  --color-kapwa-green-200: #b6fcd5;
+  --color-kapwa-green-300: #7df8b6;
+  --color-kapwa-green-400: #3deb8e;
+  --color-kapwa-green-500: #14d36d;
+  --color-kapwa-green-600: #0b7f42;
+  --color-kapwa-green-700: #0a713a;
+  --color-kapwa-green-800: #0d5e33;
+  --color-kapwa-green-900: #0d4a2b;
+  --color-kapwa-green-950: #01321a;
+
+  --color-kapwa-blue-50: #f0f8ff;
+  --color-kapwa-blue-100: #e0f0fe;
+  --color-kapwa-blue-200: #b9defe;
+  --color-kapwa-blue-300: #7cc1fd;
+  --color-kapwa-blue-400: #369ffa;
+  --color-kapwa-blue-500: #0c83eb;
+  --color-kapwa-blue-600: #006ac7;
+  --color-kapwa-blue-700: #0159a3;
+  --color-kapwa-blue-800: #064d86;
+  --color-kapwa-blue-900: #0b406f;
+  --color-kapwa-blue-950: #07284a;
+
+  --color-kapwa-orange-50: #fff9ed;
+  --color-kapwa-orange-100: #fff3d4;
+  --color-kapwa-orange-200: #ffe3a9;
+  --color-kapwa-orange-300: #ffcd72;
+  --color-kapwa-orange-400: #fdad3a;
+  --color-kapwa-orange-500: #fc9416;
+  --color-kapwa-orange-600: #ed7609;
+  --color-kapwa-orange-700: #c45a0a;
+  --color-kapwa-orange-800: #9c4610;
+  --color-kapwa-orange-900: #7d3b11;
+  --color-kapwa-orange-950: #441d06;
+
+  --color-kapwa-yellow-50: #fefce8;
+  --color-kapwa-yellow-100: #fffac2;
+  --color-kapwa-yellow-200: #fff389;
+  --color-kapwa-yellow-300: #ffe445;
+  --color-kapwa-yellow-400: #fcd116;
+  --color-kapwa-yellow-500: #ecb706;
+  --color-kapwa-yellow-600: #cc8e02;
+  --color-kapwa-yellow-700: #a26406;
+  --color-kapwa-yellow-800: #864f0d;
+  --color-kapwa-yellow-900: #724011;
+  --color-kapwa-yellow-950: #432105;
+
+  --color-kapwa-purple-50: #f5f4fe;
+  --color-kapwa-purple-100: #eeeafd;
+  --color-kapwa-purple-200: #dfd8fc;
+  --color-kapwa-purple-300: #c6b9f9;
+  --color-kapwa-purple-400: #aa92f3;
+  --color-kapwa-purple-500: #8f65ed;
+  --color-kapwa-purple-600: #8148e3;
+  --color-kapwa-purple-700: #6f32cf;
+  --color-kapwa-purple-800: #5d2aad;
+  --color-kapwa-purple-900: #4e248e;
+  --color-kapwa-purple-950: #2f1560;
+
+  --color-kapwa-gray-50: #f7f7f8;
+  --color-kapwa-gray-100: #ecedee;
+  --color-kapwa-gray-200: #d8dbdf;
+  --color-kapwa-gray-300: #c6ccd2;
+  --color-kapwa-gray-400: #b8c0c6;
+  --color-kapwa-gray-500: #abb2ba;
+  --color-kapwa-gray-600: #6f7c88;
+  --color-kapwa-gray-700: #596570;
+  --color-kapwa-gray-800: #49525b;
+  --color-kapwa-gray-900: #373d43;
+  --color-kapwa-gray-950: #1e2124;
+
+  --color-kapwa-neutral-50: hsla(0, 0%, 100%, 1);
+  --color-kapwa-neutral-100: hsla(209, 61%, 12%, 0.06);
+  --color-kapwa-neutral-200: hsla(209, 61%, 12%, 0.08);
+  --color-kapwa-neutral-300: hsla(209, 61%, 12%, 0.12);
+
+  /* Kapwa Semantic Colors */
+  /* Kapwa Text Colors */
+  --color-kapwa-text-strong: var(--color-kapwa-gray-950);
+  --color-kapwa-text-support: var(--color-kapwa-gray-700);
+  --color-kapwa-text-disabled: var(--color-kapwa-gray-500);
+  --color-kapwa-text-on-disabled: var(--color-kapwa-gray-600);
+  --color-kapwa-text-inverse: var(--color-kapwa-neutral-50);
+  --color-kapwa-text-inverse-subtle: var(--color-kapwa-gray-400);
+  --color-kapwa-text-link: var(--color-kapwa-blue-500);
+  --color-kapwa-text-link-hover: var(--color-kapwa-blue-600);
+  --color-kapwa-text-link-visited: var(--color-kapwa-blue-700);
+  --color-kapwa-text-brand: var(--color-kapwa-brand-600);
+  --color-kapwa-text-brand-bold: var(--color-kapwa-brand-950);
+  --color-kapwa-text-success: var(--color-kapwa-green-600);
+  --color-kapwa-text-danger: var(--color-kapwa-red-600);
+  --color-kapwa-text-warning: var(--color-kapwa-orange-600);
+  --color-kapwa-text-info: var(--color-kapwa-blue-600);
+
+  --color-kapwa-text-accent-purple: var(--color-kapwa-purple-700);
+  --color-kapwa-text-accent-green: var(--color-kapwa-green-700);
+  --color-kapwa-text-accent-red: var(--color-kapwa-red-700);
+  --color-kapwa-text-accent-orange: var(--color-kapwa-orange-700);
+  --color-kapwa-text-accent-blue: var(--color-kapwa-blue-700);
+
+  /* Kapwa Background Colors */
+  --color-kapwa-bg-surface: var(--color-kapwa-neutral-50);
+  --color-kapwa-bg-surface-raised: var(--color-kapwa-gray-50);
+  --color-kapwa-bg-surface-brand: var(--color-kapwa-brand-100);
+  --color-kapwa-bg-surface-bold: var(--color-kapwa-gray-950);
+  --color-kapwa-bg-surface-adaptive: var(--color-kapwa-neutral-100);
+  --color-kapwa-bg-hover: var(--color-kapwa-neutral-200);
+  --color-kapwa-bg-active: var(--color-kapwa-neutral-300);
+  --color-kapwa-bg-disabled: var(--color-kapwa-neutral-300);
+  --color-kapwa-bg-focus: var(--color-kapwa-yellow-500);
+  --color-kapwa-bg-brand-active: var(--color-kapwa-brand-50);
+  --color-kapwa-bg-overlay: hsla(210, 9%, 13%, 0.6);
+
+  --color-kapwa-bg-gray-default: var(--color-kapwa-gray-50);
+  --color-kapwa-bg-gray-hover: var(--color-kapwa-gray-100);
+  --color-kapwa-bg-gray-active: var(--color-kapwa-gray-200);
+  --color-kapwa-bg-gray-disabled: var(--color-kapwa-gray-300);
+
+  --color-kapwa-bg-brand-default: var(--color-kapwa-brand-600);
+  --color-kapwa-bg-brand-hover: var(--color-kapwa-brand-700);
+  --color-kapwa-bg-brand-active: var(--color-kapwa-brand-800);
+  --color-kapwa-bg-brand-weak: var(--color-kapwa-brand-50);
+
+  --color-kapwa-bg-info-default: var(--color-kapwa-blue-600);
+  --color-kapwa-bg-info-hover: var(--color-kapwa-blue-700);
+  --color-kapwa-bg-info-active: var(--color-kapwa-blue-800);
+  --color-kapwa-bg-info-weak: var(--color-kapwa-blue-50);
+
+  --color-kapwa-bg-danger-default: var(--color-kapwa-red-700);
+  --color-kapwa-bg-danger-hover: var(--color-kapwa-red-800);
+  --color-kapwa-bg-danger-active: var(--color-kapwa-red-900);
+  --color-kapwa-bg-danger-weak: var(--color-kapwa-red-50);
+
+  --color-kapwa-bg-warning-default: var(--color-kapwa-orange-600);
+  --color-kapwa-bg-warning-hover: var(--color-kapwa-orange-700);
+  --color-kapwa-bg-warning-active: var(--color-kapwa-orange-800);
+  --color-kapwa-bg-warning-weak: var(--color-kapwa-orange-50);
+
+  --color-kapwa-bg-success-default: var(--color-kapwa-green-600);
+  --color-kapwa-bg-success-hover: var(--color-kapwa-green-700);
+  --color-kapwa-bg-success-active: var(--color-kapwa-green-800);
+  --color-kapwa-bg-success-weak: var(--color-kapwa-green-50);
+
+  --color-kapwa-bg-accent-purple-default: var(--color-kapwa-purple-700);
+  --color-kapwa-bg-accent-purple-weak: var(--color-kapwa-purple-50);
+
+  --color-kapwa-bg-accent-green-default: var(--color-kapwa-green-600);
+  --color-kapwa-bg-accent-green-weak: var(--color-kapwa-green-50);
+
+  --color-kapwa-bg-accent-red-default: var(--color-kapwa-red-500);
+  --color-kapwa-bg-accent-red-weak: var(--color-kapwa-red-50);
+
+  --color-kapwa-bg-accent-orange-default: var(--color-kapwa-orange-600);
+  --color-kapwa-bg-accent-orange-weak: var(--color-kapwa-orange-50);
+
+  --color-kapwa-bg-accent-blue-default: var(--color-kapwa-blue-600);
+  --color-kapwa-bg-accent-blue-weak: var(--color-kapwa-blue-50);
+
+  --color-kapwa-bg-accent-yellow-default: var(--color-kapwa-yellow-500);
+  --color-kapwa-bg-accent-yellow-weak: var(--color-kapwa-yellow-50);
+
+  /* Kapwa Border Colors */
+  --color-kapwa-border-strong: var(--color-kapwa-gray-400);
+  --color-kapwa-border-weak: var(--color-kapwa-gray-200);
+  --color-kapwa-border-inverse: var(--color-kapwa-gray-50);
+  --color-kapwa-border-on-disabled: var(--color-kapwa-gray-400);
+  --color-kapwa-border-focus: var(--color-kapwa-blue-500);
+  --color-kapwa-border-brand: var(--color-kapwa-brand-600);
+  --color-kapwa-border-success: var(--color-kapwa-green-600);
+  --color-kapwa-border-danger: var(--color-kapwa-red-700);
+  --color-kapwa-border-warning: var(--color-kapwa-orange-600);
+  --color-kapwa-border-info: var(--color-kapwa-blue-600);
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes ping {
+    75%,
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+  @keyframes pulse {
+    50% {
+      opacity: 0.5;
+    }
+  }
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(-25%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: none;
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+
+  /* Animation Durations */
+  --duration-kapwa-75: 75ms;
+  --duration-kapwa-100: 100ms;
+  --duration-kapwa-150: 150ms;
+  --duration-kapwa-200: 200ms;
+  --duration-kapwa-300: 300ms;
+  --duration-kapwa-500: 500ms;
+  --duration-kapwa-700: 700ms;
+  --duration-kapwa-1000: 1000ms;
+
+  /* Animation Easing */
+  --ease-kapwa-linear: linear;
+  --ease-kapwa-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-kapwa-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-kapwa-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-kapwa-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --ease-kapwa-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.kapwa-heading-xl {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: var(--letter-spacing-tight);
+  font-style: var(--font-family-sans);
+}
+
+.heading-lg {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: var(--letter-spacing-tight);
+  font-style: var(--font-family-sans);
+}
+
+.kapwa-heading-md {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: var(--letter-spacing-tight);
+  font-style: var(--font-family-sans);
+}
+
+.kapwa-heading-sm {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: var(--letter-spacing-tight);
+  font-style: var(--font-family-sans);
+}
+
+.kapwa-body-xl-default {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: var(--font-family-sans);
+}
+
+.kapwa-body-xl-strong {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 140%;
+  font-style: var(--font-family-sans);
+}
+
+.kapwa-body-lg-default {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: var(--font-family-sans);
+}
+
+.kapwa-body-lg-strong {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 140%;
+  font-style: var(--font-family-sans);
+}
+
+.body-md-default {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: var(--font-family-sans);
+}
+
+.kapwa-body-md-strong {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 140%;
+  font-style: var(--font-family-sans);
+}
+
+.kapwa-body-sm-default {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: var(--font-family-sans);
+}
+
+.kapwa-body-sm-strong {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 140%;
+  font-style: var(--font-family-sans);
+}
+
+.kapwa-body-xs-default {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: var(--font-family-sans);
+}
+
+.kapwa-body-xs-strong {
+  font-size: 0.775rem;
+  font-weight: 700;
+  line-height: 140%;
+  font-style: var(--font-family-sans);
+}
+
+.kapwa-code-lg {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: var(--font-family-mono);
+}
+
+.kapwa-code-md {
+  font-size: 1;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: var(--font-family-mono);
+}
+
+.kapwa-code-sm {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: var(--font-family-mono);
+}
+
+.kapwa-label-lg {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 120%;
+  font-style: var(--font-family-sans);
+}
+
+.kapwa-label-md {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 120%;
+  font-style: var(--font-family-sans);
+}
+
+.kapwa-label-sm {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 120%;
+  font-style: var(--font-family-sans);
+}
+
+.kapwa-label-xs {
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 120%;
+  font-style: var(--font-family-sans);
+}
+
+.kapwa-input {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  font-style: var(--font-family-sans);
+}
+
+.kapwa-link-lg {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: var(--font-family-sans);
+  text-decoration: underline;
+}
+
+.kapwa-link-md {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: var(--font-family-sans);
+  text-decoration: underline;
+}
+
+.kapwa-link-sm {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: var(--font-family-sans);
+  text-decoration: underline;
+}

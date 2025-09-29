@@ -1,0 +1,861 @@
+@import 'tailwindcss';
+@import './kapwa.css';
+
+/* Safelist to ensure all Kapwa classes are generated */
+@layer utilities {
+  /* Neutral Colors */
+  .kapwa-bg-neutral-50 {
+    background-color: var(--color-kapwa-neutral-50);
+  }
+  .kapwa-bg-neutral-100 {
+    background-color: var(--color-kapwa-neutral-100);
+  }
+  .kapwa-bg-neutral-200 {
+    background-color: var(--color-kapwa-neutral-200);
+  }
+  .kapwa-bg-neutral-300 {
+    background-color: var(--color-kapwa-neutral-300);
+  }
+
+  /* Brand Colors */
+  .kapwa-bg-brand-50 {
+    background-color: var(--color-kapwa-brand-50);
+  }
+  .kapwa-bg-brand-100 {
+    background-color: var(--color-kapwa-brand-100);
+  }
+  .kapwa-bg-brand-200 {
+    background-color: var(--color-kapwa-brand-200);
+  }
+  .kapwa-bg-brand-300 {
+    background-color: var(--color-kapwa-brand-300);
+  }
+  .kapwa-bg-brand-400 {
+    background-color: var(--color-kapwa-brand-400);
+  }
+  .kapwa-bg-brand-500 {
+    background-color: var(--color-kapwa-brand-500);
+  }
+  .kapwa-bg-brand-600 {
+    background-color: var(--color-kapwa-brand-600);
+  }
+  .kapwa-bg-brand-700 {
+    background-color: var(--color-kapwa-brand-700);
+  }
+  .kapwa-bg-brand-800 {
+    background-color: var(--color-kapwa-brand-800);
+  }
+  .kapwa-bg-brand-900 {
+    background-color: var(--color-kapwa-brand-900);
+  }
+  .kapwa-bg-brand-950 {
+    background-color: var(--color-kapwa-brand-950);
+  }
+
+  /* Red Colors */
+  .kapwa-bg-red-50 {
+    background-color: var(--color-kapwa-red-50);
+  }
+  .kapwa-bg-red-100 {
+    background-color: var(--color-kapwa-red-100);
+  }
+  .kapwa-bg-red-200 {
+    background-color: var(--color-kapwa-red-200);
+  }
+  .kapwa-bg-red-300 {
+    background-color: var(--color-kapwa-red-300);
+  }
+  .kapwa-bg-red-400 {
+    background-color: var(--color-kapwa-red-400);
+  }
+  .kapwa-bg-red-500 {
+    background-color: var(--color-kapwa-red-500);
+  }
+  .kapwa-bg-red-600 {
+    background-color: var(--color-kapwa-red-600);
+  }
+  .kapwa-bg-red-700 {
+    background-color: var(--color-kapwa-red-700);
+  }
+  .kapwa-bg-red-800 {
+    background-color: var(--color-kapwa-red-800);
+  }
+  .kapwa-bg-red-900 {
+    background-color: var(--color-kapwa-red-900);
+  }
+  .kapwa-bg-red-950 {
+    background-color: var(--color-kapwa-red-950);
+  }
+
+  /* Green Colors */
+  .kapwa-bg-green-50 {
+    background-color: var(--color-kapwa-green-50);
+  }
+  .kapwa-bg-green-100 {
+    background-color: var(--color-kapwa-green-100);
+  }
+  .kapwa-bg-green-200 {
+    background-color: var(--color-kapwa-green-200);
+  }
+  .kapwa-bg-green-300 {
+    background-color: var(--color-kapwa-green-300);
+  }
+  .kapwa-bg-green-400 {
+    background-color: var(--color-kapwa-green-400);
+  }
+  .kapwa-bg-green-500 {
+    background-color: var(--color-kapwa-green-500);
+  }
+  .kapwa-bg-green-600 {
+    background-color: var(--color-kapwa-green-600);
+  }
+  .kapwa-bg-green-700 {
+    background-color: var(--color-kapwa-green-700);
+  }
+  .kapwa-bg-green-800 {
+    background-color: var(--color-kapwa-green-800);
+  }
+  .kapwa-bg-green-900 {
+    background-color: var(--color-kapwa-green-900);
+  }
+  .kapwa-bg-green-950 {
+    background-color: var(--color-kapwa-green-950);
+  }
+
+  /* Blue Colors */
+  .kapwa-bg-blue-50 {
+    background-color: var(--color-kapwa-blue-50);
+  }
+  .kapwa-bg-blue-100 {
+    background-color: var(--color-kapwa-blue-100);
+  }
+  .kapwa-bg-blue-200 {
+    background-color: var(--color-kapwa-blue-200);
+  }
+  .kapwa-bg-blue-300 {
+    background-color: var(--color-kapwa-blue-300);
+  }
+  .kapwa-bg-blue-400 {
+    background-color: var(--color-kapwa-blue-400);
+  }
+  .kapwa-bg-blue-500 {
+    background-color: var(--color-kapwa-blue-500);
+  }
+  .kapwa-bg-blue-600 {
+    background-color: var(--color-kapwa-blue-600);
+  }
+  .kapwa-bg-blue-700 {
+    background-color: var(--color-kapwa-blue-700);
+  }
+  .kapwa-bg-blue-800 {
+    background-color: var(--color-kapwa-blue-800);
+  }
+  .kapwa-bg-blue-900 {
+    background-color: var(--color-kapwa-blue-900);
+  }
+  .kapwa-bg-blue-950 {
+    background-color: var(--color-kapwa-blue-950);
+  }
+
+  /* Orange Colors */
+  .kapwa-bg-orange-50 {
+    background-color: var(--color-kapwa-orange-50);
+  }
+  .kapwa-bg-orange-100 {
+    background-color: var(--color-kapwa-orange-100);
+  }
+  .kapwa-bg-orange-200 {
+    background-color: var(--color-kapwa-orange-200);
+  }
+  .kapwa-bg-orange-300 {
+    background-color: var(--color-kapwa-orange-300);
+  }
+  .kapwa-bg-orange-400 {
+    background-color: var(--color-kapwa-orange-400);
+  }
+  .kapwa-bg-orange-500 {
+    background-color: var(--color-kapwa-orange-500);
+  }
+  .kapwa-bg-orange-600 {
+    background-color: var(--color-kapwa-orange-600);
+  }
+  .kapwa-bg-orange-700 {
+    background-color: var(--color-kapwa-orange-700);
+  }
+  .kapwa-bg-orange-800 {
+    background-color: var(--color-kapwa-orange-800);
+  }
+  .kapwa-bg-orange-900 {
+    background-color: var(--color-kapwa-orange-900);
+  }
+  .kapwa-bg-orange-950 {
+    background-color: var(--color-kapwa-orange-950);
+  }
+
+  /* Yellow Colors */
+  .kapwa-bg-yellow-50 {
+    background-color: var(--color-kapwa-yellow-50);
+  }
+  .kapwa-bg-yellow-100 {
+    background-color: var(--color-kapwa-yellow-100);
+  }
+  .kapwa-bg-yellow-200 {
+    background-color: var(--color-kapwa-yellow-200);
+  }
+  .kapwa-bg-yellow-300 {
+    background-color: var(--color-kapwa-yellow-300);
+  }
+  .kapwa-bg-yellow-400 {
+    background-color: var(--color-kapwa-yellow-400);
+  }
+  .kapwa-bg-yellow-500 {
+    background-color: var(--color-kapwa-yellow-500);
+  }
+  .kapwa-bg-yellow-600 {
+    background-color: var(--color-kapwa-yellow-600);
+  }
+  .kapwa-bg-yellow-700 {
+    background-color: var(--color-kapwa-yellow-700);
+  }
+  .kapwa-bg-yellow-800 {
+    background-color: var(--color-kapwa-yellow-800);
+  }
+  .kapwa-bg-yellow-900 {
+    background-color: var(--color-kapwa-yellow-900);
+  }
+  .kapwa-bg-yellow-950 {
+    background-color: var(--color-kapwa-yellow-950);
+  }
+
+  /* Purple Colors */
+  .kapwa-bg-purple-50 {
+    background-color: var(--color-kapwa-purple-50);
+  }
+  .kapwa-bg-purple-100 {
+    background-color: var(--color-kapwa-purple-100);
+  }
+  .kapwa-bg-purple-200 {
+    background-color: var(--color-kapwa-purple-200);
+  }
+  .kapwa-bg-purple-300 {
+    background-color: var(--color-kapwa-purple-300);
+  }
+  .kapwa-bg-purple-400 {
+    background-color: var(--color-kapwa-purple-400);
+  }
+  .kapwa-bg-purple-500 {
+    background-color: var(--color-kapwa-purple-500);
+  }
+  .kapwa-bg-purple-600 {
+    background-color: var(--color-kapwa-purple-600);
+  }
+  .kapwa-bg-purple-700 {
+    background-color: var(--color-kapwa-purple-700);
+  }
+  .kapwa-bg-purple-800 {
+    background-color: var(--color-kapwa-purple-800);
+  }
+  .kapwa-bg-purple-900 {
+    background-color: var(--color-kapwa-purple-900);
+  }
+  .kapwa-bg-purple-950 {
+    background-color: var(--color-kapwa-purple-950);
+  }
+
+  /* Gray Colors */
+  .kapwa-bg-gray-50 {
+    background-color: var(--color-kapwa-gray-50);
+  }
+  .kapwa-bg-gray-100 {
+    background-color: var(--color-kapwa-gray-100);
+  }
+  .kapwa-bg-gray-200 {
+    background-color: var(--color-kapwa-gray-200);
+  }
+  .kapwa-bg-gray-300 {
+    background-color: var(--color-kapwa-gray-300);
+  }
+  .kapwa-bg-gray-400 {
+    background-color: var(--color-kapwa-gray-400);
+  }
+  .kapwa-bg-gray-500 {
+    background-color: var(--color-kapwa-gray-500);
+  }
+  .kapwa-bg-gray-600 {
+    background-color: var(--color-kapwa-gray-600);
+  }
+  .kapwa-bg-gray-700 {
+    background-color: var(--color-kapwa-gray-700);
+  }
+  .kapwa-bg-gray-800 {
+    background-color: var(--color-kapwa-gray-800);
+  }
+  .kapwa-bg-gray-900 {
+    background-color: var(--color-kapwa-gray-900);
+  }
+  .kapwa-bg-gray-950 {
+    background-color: var(--color-kapwa-gray-950);
+  }
+
+  /* Primitive Text Colors */
+  .kapwa-text-brand-500 {
+    color: var(--color-kapwa-brand-500);
+  }
+  .kapwa-text-brand-600 {
+    color: var(--color-kapwa-brand-600);
+  }
+  .kapwa-text-brand-700 {
+    color: var(--color-kapwa-brand-700);
+  }
+  .kapwa-text-brand-800 {
+    color: var(--color-kapwa-brand-800);
+  }
+
+  .kapwa-text-gray-600 {
+    color: var(--color-kapwa-gray-600);
+  }
+  .kapwa-text-gray-700 {
+    color: var(--color-kapwa-gray-700);
+  }
+  .kapwa-text-gray-800 {
+    color: var(--color-kapwa-gray-800);
+  }
+
+  /* Primitive Border Colors */
+  .kapwa-border-gray-200 {
+    border-color: var(--color-kapwa-gray-200);
+  }
+  .kapwa-border-brand-200 {
+    border-color: var(--color-kapwa-brand-200);
+  }
+  .kapwa-border-brand-500 {
+    border-color: var(--color-kapwa-brand-500);
+  }
+  .kapwa-border-brand-700 {
+    border-color: var(--color-kapwa-brand-700);
+  }
+  .kapwa-border-orange-200 {
+    border-color: var(--color-kapwa-orange-200);
+  }
+
+  /* Shadow Utilities */
+  .shadow-xs {
+    box-shadow: var(--shadow-xs);
+  }
+  .shadow-sm {
+    box-shadow: var(--shadow-sm);
+  }
+  .shadow-base {
+    box-shadow: var(--shadow-base);
+  }
+  .shadow-md {
+    box-shadow: var(--shadow-md);
+  }
+  .shadow-lg {
+    box-shadow: var(--shadow-lg);
+  }
+
+  /* Kapwa Semantic Text Colors */
+  .kapwa-text-strong {
+    color: var(--color-kapwa-text-strong);
+  }
+  .kapwa-text-support {
+    color: var(--color-kapwa-text-support);
+  }
+
+  .kapwa-text-disabled {
+    color: var(--color-kapwa-text-disabled);
+  }
+  .kapwa-text-on-disabled {
+    color: var(--color-kapwa-text-on-disabled);
+  }
+  .kapwa-text-inverse {
+    color: var(--color-kapwa-text-inverse);
+  }
+  .kapwa-text-inverse-subtle {
+    color: var(--color-kapwa-text-inverse-subtle);
+  }
+  .kapwa-text-link {
+    color: var(--color-kapwa-text-link);
+  }
+  .kapwa-text-link-hover {
+    color: var(--color-kapwa-text-link-hover);
+  }
+  .kapwa-text-link-visited {
+    color: var(--color-kapwa-text-link-visited);
+  }
+  .kapwa-text-brand {
+    color: var(--color-kapwa-text-brand);
+  }
+  .kapwa-text-brand-bold {
+    color: var(--color-kapwa-text-brand-bold);
+  }
+  .kapwa-text-success {
+    color: var(--color-kapwa-text-success);
+  }
+  .kapwa-text-danger {
+    color: var(--color-kapwa-text-danger);
+  }
+  .kapwa-text-warning {
+    color: var(--color-kapwa-text-warning);
+  }
+  .kapwa-text-info {
+    color: var(--color-kapwa-text-info);
+  }
+  .kapwa-text-accent-purple {
+    color: var(--color-kapwa-text-accent-purple);
+  }
+  .kapwa-text-accent-green {
+    color: var(--color-kapwa-text-accent-green);
+  }
+  .kapwa-text-accent-red {
+    color: var(--color-kapwa-text-accent-red);
+  }
+  .kapwa-text-accent-orange {
+    color: var(--color-kapwa-text-accent-orange);
+  }
+  .kapwa-text-accent-blue {
+    color: var(--color-kapwa-text-accent-blue);
+  }
+
+  /* Kapwa Semantic Background Colors */
+  .kapwa-bg-surface {
+    background-color: var(--color-kapwa-bg-surface);
+  }
+  .kapwa-bg-surface-raised {
+    background-color: var(--color-kapwa-bg-surface-raised);
+  }
+  .kapwa-bg-surface-brand {
+    background-color: var(--color-kapwa-bg-surface-brand);
+  }
+  .kapwa-bg-surface-bold {
+    background-color: var(--color-kapwa-bg-surface-bold);
+  }
+  .kapwa-bg-surface-adaptive {
+    background-color: var(--color-kapwa-bg-surface-adaptive);
+  }
+  .kapwa-bg-hover {
+    background-color: var(--color-kapwa-bg-hover);
+  }
+  .kapwa-bg-active {
+    background-color: var(--color-kapwa-bg-active);
+  }
+  .kapwa-bg-disabled {
+    background-color: var(--color-kapwa-bg-disabled);
+  }
+  .kapwa-bg-focus {
+    background-color: var(--color-kapwa-bg-focus);
+  }
+  .kapwa-bg-brand-active {
+    background-color: var(--color-kapwa-bg-brand-active);
+  }
+  .kapwa-bg-overlay {
+    background-color: var(--color-kapwa-bg-overlay);
+  }
+
+  /* Kapwa Gray Background Colors */
+  .kapwa-bg-gray-default {
+    background-color: var(--color-kapwa-bg-gray-default);
+  }
+  .kapwa-bg-gray-hover {
+    background-color: var(--color-kapwa-bg-gray-hover);
+  }
+  .kapwa-bg-gray-active {
+    background-color: var(--color-kapwa-bg-gray-active);
+  }
+  .kapwa-bg-gray-disabled {
+    background-color: var(--color-kapwa-bg-gray-disabled);
+  }
+
+  /* Kapwa Brand Background Colors */
+  .kapwa-bg-brand-default {
+    background-color: var(--color-kapwa-bg-brand-default);
+  }
+  .kapwa-bg-brand-hover {
+    background-color: var(--color-kapwa-bg-brand-hover);
+  }
+  .kapwa-bg-brand-active {
+    background-color: var(--color-kapwa-bg-brand-active);
+  }
+  .kapwa-bg-brand-weak {
+    background-color: var(--color-kapwa-bg-brand-weak);
+  }
+
+  /* Kapwa Info Background Colors */
+  .kapwa-bg-info-default {
+    background-color: var(--color-kapwa-bg-info-default);
+  }
+  .kapwa-bg-info-hover {
+    background-color: var(--color-kapwa-bg-info-hover);
+  }
+  .kapwa-bg-info-active {
+    background-color: var(--color-kapwa-bg-info-active);
+  }
+  .kapwa-bg-info-weak {
+    background-color: var(--color-kapwa-bg-info-weak);
+  }
+
+  /* Kapwa Danger Background Colors */
+  .kapwa-bg-danger-default {
+    background-color: var(--color-kapwa-bg-danger-default);
+  }
+  .kapwa-bg-danger-hover {
+    background-color: var(--color-kapwa-bg-danger-hover);
+  }
+  .kapwa-bg-danger-active {
+    background-color: var(--color-kapwa-bg-danger-active);
+  }
+  .kapwa-bg-danger-weak {
+    background-color: var(--color-kapwa-bg-danger-weak);
+  }
+
+  /* Kapwa Warning Background Colors */
+  .kapwa-bg-warning-default {
+    background-color: var(--color-kapwa-bg-warning-default);
+  }
+  .kapwa-bg-warning-hover {
+    background-color: var(--color-kapwa-bg-warning-hover);
+  }
+  .kapwa-bg-warning-active {
+    background-color: var(--color-kapwa-bg-warning-active);
+  }
+  .kapwa-bg-warning-weak {
+    background-color: var(--color-kapwa-bg-warning-weak);
+  }
+
+  /* Kapwa Success Background Colors */
+  .kapwa-bg-success-default {
+    background-color: var(--color-kapwa-bg-success-default);
+  }
+  .kapwa-bg-success-hover {
+    background-color: var(--color-kapwa-bg-success-hover);
+  }
+  .kapwa-bg-success-active {
+    background-color: var(--color-kapwa-bg-success-active);
+  }
+  .kapwa-bg-success-weak {
+    background-color: var(--color-kapwa-bg-success-weak);
+  }
+
+  /* Kapwa Accent Background Colors */
+  .kapwa-bg-accent-purple-default {
+    background-color: var(--color-kapwa-bg-accent-purple-default);
+  }
+  .kapwa-bg-accent-purple-weak {
+    background-color: var(--color-kapwa-bg-accent-purple-weak);
+  }
+  .kapwa-bg-accent-green-default {
+    background-color: var(--color-kapwa-bg-accent-green-default);
+  }
+  .kapwa-bg-accent-green-weak {
+    background-color: var(--color-kapwa-bg-accent-green-weak);
+  }
+  .kapwa-bg-accent-red-default {
+    background-color: var(--color-kapwa-bg-accent-red-default);
+  }
+  .kapwa-bg-accent-red-weak {
+    background-color: var(--color-kapwa-bg-accent-red-weak);
+  }
+  .kapwa-bg-accent-orange-default {
+    background-color: var(--color-kapwa-bg-accent-orange-default);
+  }
+  .kapwa-bg-accent-orange-weak {
+    background-color: var(--color-kapwa-bg-accent-orange-weak);
+  }
+  .kapwa-bg-accent-blue-default {
+    background-color: var(--color-kapwa-bg-accent-blue-default);
+  }
+  .kapwa-bg-accent-blue-weak {
+    background-color: var(--color-kapwa-bg-accent-blue-weak);
+  }
+  .kapwa-bg-accent-yellow-default {
+    background-color: var(--color-kapwa-bg-accent-yellow-default);
+  }
+  .kapwa-bg-accent-yellow-weak {
+    background-color: var(--color-kapwa-bg-accent-yellow-weak);
+  }
+
+  /* Kapwa Border Colors */
+  .kapwa-border-strong {
+    border-color: var(--color-kapwa-border-strong);
+  }
+  .kapwa-border-weak {
+    border-color: var(--color-kapwa-border-weak);
+  }
+  .kapwa-border-inverse {
+    border-color: var(--color-kapwa-border-inverse);
+  }
+  .kapwa-border-on-disabled {
+    border-color: var(--color-kapwa-border-on-disabled);
+  }
+  .kapwa-border-focus {
+    border-color: var(--color-kapwa-border-focus);
+  }
+  .kapwa-border-brand {
+    border-color: var(--color-kapwa-border-brand);
+  }
+  .kapwa-border-success {
+    border-color: var(--color-kapwa-border-success);
+  }
+  .kapwa-border-danger {
+    border-color: var(--color-kapwa-border-danger);
+  }
+  .kapwa-border-warning {
+    border-color: var(--color-kapwa-border-warning);
+  }
+  .kapwa-border-info {
+    border-color: var(--color-kapwa-border-info);
+  }
+}
+
+@theme {
+  /* Fonts */
+  --font-sans: 'Figtree', ui-sans-serif, sans-serif;
+
+  /* Primary (blue) */
+  --color-primary-50: #e6f0fd;
+  --color-primary-100: #cce0fb;
+  --color-primary-200: #99c2f7;
+  --color-primary-300: #66a3f3;
+  --color-primary-400: #3385ef;
+  --color-primary-500: #0066eb;
+  --color-primary-600: #0052bc;
+  --color-primary-700: #003d8d;
+  --color-primary-800: #00295e;
+  --color-primary-900: #00142f;
+
+  /* Secondary (orange) */
+  --color-secondary-50: #ffede6;
+  --color-secondary-100: #ffdbcc;
+  --color-secondary-200: #ffb799;
+  --color-secondary-300: #ff9466;
+  --color-secondary-400: #ff7033;
+  --color-secondary-500: #ff4d00;
+  --color-secondary-600: #cc3e00;
+  --color-secondary-700: #992e00;
+  --color-secondary-800: #661f00;
+  --color-secondary-900: #330f00;
+
+  /* Accent (yellow/gold) */
+  --color-accent-50: #fef3e6;
+  --color-accent-100: #fde7cc;
+  --color-accent-200: #fbd099;
+  --color-accent-300: #f9b866;
+  --color-accent-400: #f7a133;
+  --color-accent-500: #f58900;
+  --color-accent-600: #c46e00;
+  --color-accent-700: #935200;
+  --color-accent-800: #623700;
+  --color-accent-900: #311b00;
+
+  /* Semantic */
+  --color-success-50: #e6f7ef;
+  --color-success-100: #ccefdf;
+  --color-success-200: #99dfbf;
+  --color-success-300: #66cf9f;
+  --color-success-400: #33bf7f;
+  --color-success-500: #00af5f;
+  --color-success-600: #008c4c;
+  --color-success-700: #006939;
+  --color-success-800: #004626;
+  --color-success-900: #002313;
+
+  --color-warning-50: #fff8e6;
+  --color-warning-100: #fff1cc;
+  --color-warning-200: #ffe399;
+  --color-warning-300: #ffd566;
+  --color-warning-400: #ffc733;
+  --color-warning-500: #ffb900;
+  --color-warning-600: #cc9400;
+  --color-warning-700: #996f00;
+  --color-warning-800: #664a00;
+  --color-warning-900: #332500;
+
+  --color-error-50: #fceaea;
+  --color-error-100: #f9d5d5;
+  --color-error-200: #f3abab;
+  --color-error-300: #ed8282;
+  --color-error-400: #e75858;
+  --color-error-500: #e12e2e;
+  --color-error-600: #b42525;
+  --color-error-700: #871c1c;
+  --color-error-800: #5a1212;
+  --color-error-900: #2d0909;
+
+  /* Gray */
+  --color-gray-50: #f8f9fa;
+  --color-gray-100: #f1f3f5;
+  --color-gray-200: #e9ecef;
+  --color-gray-300: #dee2e6;
+  --color-gray-400: #ced4da;
+  --color-gray-500: #adb5bd;
+  --color-gray-600: #868e96;
+  --color-gray-700: #495057;
+  --color-gray-800: #343a40;
+  --color-gray-900: #212529;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+/* Leaflet popup fixes for Tailwind CSS conflicts */
+.leaflet-popup-content-wrapper {
+  border-radius: 8px !important;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  line-height: 1.5 !important;
+  font-size: 14px !important;
+  color: #374151 !important;
+  padding: 16px;
+  min-width: 300px;
+}
+
+.leaflet-popup-tip {
+  background: white !important;
+  border: none !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+}
+
+.leaflet-popup-close-button {
+  color: #6b7280 !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+  padding: 4px 8px !important;
+  margin-right: 12px !important;
+}
+
+.leaflet-popup-close-button:hover {
+  color: #374151 !important;
+  background: transparent !important;
+}
+
+/* Ensure popup content displays properly */
+.leaflet-popup .leaflet-popup-content-wrapper .leaflet-popup-content {
+  width: auto !important;
+  white-space: normal !important;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+
+  /* * {
+    @apply border-border;
+  } */
+
+  /* body {
+    @apply bg-background text-foreground;
+  } */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Utility classes to mirror v3 `animation` map */
+@utility animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@utility animate-slide-in {
+  animation: slideIn 0.5s ease-out;
+}
