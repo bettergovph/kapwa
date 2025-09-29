@@ -834,22 +834,22 @@ const KapwaThemeDemo: React.FC<KapwaThemeDemoProps> = ({ className = '' }) => {
             <div className='space-y-4'>
               {[
                 {
-                  class: 'heading-xl',
+                  class: 'kapwa-heading-xl',
                   text: 'Heading XL',
                   description: '2.5rem, 700 weight, 140% line-height',
                 },
                 {
-                  class: 'heading-lg',
+                  class: 'kapwa-heading-lg',
                   text: 'Heading LG',
                   description: '2rem, 700 weight, 140% line-height',
                 },
                 {
-                  class: 'heading-md',
+                  class: 'kapwa-heading-md',
                   text: 'Heading MD',
                   description: '1.5rem, 700 weight, 140% line-height',
                 },
                 {
-                  class: 'heading-sm',
+                  class: 'kapwa-heading-sm',
                   text: 'Heading SM',
                   description: '1.25rem, 700 weight, 140% line-height',
                 },
@@ -882,52 +882,52 @@ const KapwaThemeDemo: React.FC<KapwaThemeDemoProps> = ({ className = '' }) => {
             <div className='space-y-4'>
               {[
                 {
-                  class: 'body-xl-default',
+                  class: 'kapwa-body-xl-default',
                   text: 'Body XL Default',
                   description: '1.25rem, 400 weight, 140% line-height',
                 },
                 {
-                  class: 'body-xl-strong',
+                  class: 'kapwa-body-xl-strong',
                   text: 'Body XL Strong',
                   description: '1.25rem, 700 weight, 140% line-height',
                 },
                 {
-                  class: 'body-lg-default',
+                  class: 'kapwa-body-lg-default',
                   text: 'Body LG Default',
                   description: '1.125rem, 400 weight, 140% line-height',
                 },
                 {
-                  class: 'body-lg-strong',
+                  class: 'kapwa-body-lg-strong',
                   text: 'Body LG Strong',
                   description: '1.125rem, 700 weight, 140% line-height',
                 },
                 {
-                  class: 'body-md-default',
+                  class: 'kapwa-body-md-default',
                   text: 'Body MD Default',
                   description: '1rem, 400 weight, 140% line-height',
                 },
                 {
-                  class: 'body-md-strong',
+                  class: 'kapwa-body-md-strong',
                   text: 'Body MD Strong',
                   description: '1rem, 700 weight, 140% line-height',
                 },
                 {
-                  class: 'body-sm-default',
+                  class: 'kapwa-body-sm-default',
                   text: 'Body SM Default',
                   description: '0.875rem, 400 weight, 140% line-height',
                 },
                 {
-                  class: 'body-sm-strong',
+                  class: 'kapwa-body-sm-strong',
                   text: 'Body SM Strong',
                   description: '0.875rem, 700 weight, 140% line-height',
                 },
                 {
-                  class: 'body-xs-default',
+                  class: 'kapwa-body-xs-default',
                   text: 'Body XS Default',
                   description: '0.75rem, 400 weight, 140% line-height',
                 },
                 {
-                  class: 'body-xs-strong',
+                  class: 'kapwa-body-xs-strong',
                   text: 'Body XS Strong',
                   description: '0.775rem, 700 weight, 140% line-height',
                 },
@@ -960,18 +960,18 @@ const KapwaThemeDemo: React.FC<KapwaThemeDemoProps> = ({ className = '' }) => {
             <div className='space-y-4'>
               {[
                 {
-                  class: 'code-lg',
+                  class: 'kapwa-code-lg',
                   text: 'Code LG',
                   description:
                     '1.125rem, 400 weight, 140% line-height, mono font',
                 },
                 {
-                  class: 'code-md',
+                  class: 'kapwa-code-md',
                   text: 'Code MD',
                   description: '1rem, 400 weight, 140% line-height, mono font',
                 },
                 {
-                  class: 'code-sm',
+                  class: 'kapwa-code-sm',
                   text: 'Code SM',
                   description:
                     '0.875rem, 400 weight, 140% line-height, mono font',
@@ -1005,22 +1005,22 @@ const KapwaThemeDemo: React.FC<KapwaThemeDemoProps> = ({ className = '' }) => {
             <div className='space-y-4'>
               {[
                 {
-                  class: 'label-lg',
+                  class: 'kapwa-label-lg',
                   text: 'Label LG',
                   description: '1.125rem, 700 weight, 120% line-height',
                 },
                 {
-                  class: 'label-md',
+                  class: 'kapwa-label-md',
                   text: 'Label MD',
                   description: '1rem, 700 weight, 120% line-height',
                 },
                 {
-                  class: 'label-sm',
+                  class: 'kapwa-label-sm',
                   text: 'Label SM',
                   description: '0.875rem, 700 weight, 120% line-height',
                 },
                 {
-                  class: 'label-xs',
+                  class: 'kapwa-label-xs',
                   text: 'Label XS',
                   description: '0.75rem, 700 weight, 120% line-height',
                 },
@@ -1053,7 +1053,7 @@ const KapwaThemeDemo: React.FC<KapwaThemeDemoProps> = ({ className = '' }) => {
             <div className='space-y-4'>
               {[
                 {
-                  class: 'input',
+                  class: 'kapwa-input',
                   text: 'Input Text',
                   description: '1rem, 400 weight, 1.5rem line-height',
                 },

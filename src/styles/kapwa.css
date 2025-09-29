@@ -261,7 +261,7 @@
   font-style: var(--font-family-sans);
 }
 
-.heading-lg {
+.kapwa-heading-lg {
   font-size: 2rem;
   font-weight: 700;
   line-height: 140%;
@@ -313,7 +313,7 @@
   font-style: var(--font-family-sans);
 }
 
-.body-md-default {
+.kapwa-body-md-default {
   font-size: 1rem;
   font-weight: 400;
   line-height: 140%;
