@@ -407,6 +407,12 @@ const KapwaThemeDemo: React.FC<KapwaThemeDemoProps> = ({ className = '' }) => {
                   maps: 'Neutral/100',
                 },
                 {
+                  name: 'Surface Brand Active',
+                  var: '--color-kapwa-bg-surface-brand-active',
+                  class: 'kapwa-bg-surface-brand-active',
+                  maps: 'Brand/50',
+                },
+                {
                   name: 'Hover',
                   var: '--color-kapwa-bg-hover',
                   class: 'kapwa-bg-hover',
@@ -429,12 +435,6 @@ const KapwaThemeDemo: React.FC<KapwaThemeDemoProps> = ({ className = '' }) => {
                   var: '--color-kapwa-bg-focus',
                   class: 'kapwa-bg-focus',
                   maps: 'Yellow/500',
-                },
-                {
-                  name: 'Brand Active',
-                  var: '--color-kapwa-bg-brand-active',
-                  class: 'kapwa-bg-brand-active',
-                  maps: 'Brand/50',
                 },
                 {
                   name: 'Overlay',

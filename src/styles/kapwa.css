@@ -142,7 +142,7 @@
   --color-kapwa-bg-active: var(--color-kapwa-neutral-300);
   --color-kapwa-bg-disabled: var(--color-kapwa-neutral-300);
   --color-kapwa-bg-focus: var(--color-kapwa-yellow-500);
-  --color-kapwa-bg-brand-active: var(--color-kapwa-brand-50);
+  --color-kapwa-bg-surface-brand-active: var(--color-kapwa-brand-50);
   --color-kapwa-bg-overlay: hsla(210, 9%, 13%, 0.6);
 
   --color-kapwa-bg-gray-default: var(--color-kapwa-gray-50);
