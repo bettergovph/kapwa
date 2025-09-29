@@ -25,16 +25,13 @@ const KapwaThemeDemo: React.FC<KapwaThemeDemoProps> = ({ className = '' }) => {
                   <div key={shade} className='flex items-center gap-3'>
                     <div
                       className={`w-8 h-8 rounded border kapwa-border-gray-200 kapwa-bg-brand-${shade}`}
-                      style={{
-                        backgroundColor: `var(--color-kapwa-brand-${shade})`,
-                      }}
                     ></div>
                     <div>
                       <p className='text-sm font-medium kapwa-text-gray-800'>
                         Brand {shade}
                       </p>
                       <p className='text-xs kapwa-text-gray-600'>
-                        kapwa-bg-brand-{shade}
+                        kapwa-brand-{shade}
                       </p>
                     </div>
                   </div>
@@ -59,7 +56,7 @@ const KapwaThemeDemo: React.FC<KapwaThemeDemoProps> = ({ className = '' }) => {
                         Red {shade}
                       </p>
                       <p className='text-xs kapwa-text-gray-600'>
-                        kapwa-bg-red-{shade}
+                        kapwa-red-{shade}
                       </p>
                     </div>
                   </div>
@@ -84,7 +81,7 @@ const KapwaThemeDemo: React.FC<KapwaThemeDemoProps> = ({ className = '' }) => {
                         Green {shade}
                       </p>
                       <p className='text-xs kapwa-text-gray-600'>
-                        kapwa-bg-green-{shade}
+                        kapwa-green-{shade}
                       </p>
                     </div>
                   </div>
@@ -109,7 +106,7 @@ const KapwaThemeDemo: React.FC<KapwaThemeDemoProps> = ({ className = '' }) => {
                         Yellow {shade}
                       </p>
                       <p className='text-xs kapwa-text-gray-600'>
-                        kapwa-bg-yellow-{shade}
+                        kapwa-yellow-{shade}
                       </p>
                     </div>
                   </div>
@@ -134,7 +131,7 @@ const KapwaThemeDemo: React.FC<KapwaThemeDemoProps> = ({ className = '' }) => {
                         Orange {shade}
                       </p>
                       <p className='text-xs kapwa-text-gray-600'>
-                        kapwa-bg-orange-{shade}
+                        kapwa-orange-{shade}
                       </p>
                     </div>
                   </div>
@@ -159,7 +156,7 @@ const KapwaThemeDemo: React.FC<KapwaThemeDemoProps> = ({ className = '' }) => {
                         Purple {shade}
                       </p>
                       <p className='text-xs kapwa-text-gray-600'>
-                        kapwa-bg-purple-{shade}
+                        kapwa-purple-{shade}
                       </p>
                     </div>
                   </div>
@@ -184,7 +181,7 @@ const KapwaThemeDemo: React.FC<KapwaThemeDemoProps> = ({ className = '' }) => {
                         Blue {shade}
                       </p>
                       <p className='text-xs kapwa-text-gray-600'>
-                        kapwa-bg-blue-{shade}
+                        kapwa-blue-{shade}
                       </p>
                     </div>
                   </div>
@@ -209,7 +206,7 @@ const KapwaThemeDemo: React.FC<KapwaThemeDemoProps> = ({ className = '' }) => {
                         Gray {shade}
                       </p>
                       <p className='text-xs kapwa-text-gray-600'>
-                        kapwa-bg-gray-{shade}
+                        kapwa-gray-{shade}
                       </p>
                     </div>
                   </div>
@@ -233,7 +230,7 @@ const KapwaThemeDemo: React.FC<KapwaThemeDemoProps> = ({ className = '' }) => {
                       Neutral {shade}
                     </p>
                     <p className='text-xs kapwa-text-gray-600'>
-                      kapwa-bg-neutral-{shade}
+                      kapwa-neutral-{shade}
                     </p>
                   </div>
                 </div>
