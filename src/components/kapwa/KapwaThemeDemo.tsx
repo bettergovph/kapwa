@@ -495,6 +495,35 @@ const KapwaThemeDemo: React.FC<KapwaThemeDemoProps> = ({ className = '' }) => {
                   class: 'kapwa-bg-brand-weak',
                   maps: 'Brand/50',
                 },
+              ].map(color => (
+                <div key={color.name} className='flex items-center gap-3'>
+                  <div
+                    className='w-8 h-8 rounded border kapwa-border-gray-200'
+                    style={{ backgroundColor: `var(${color.var})` }}
+                  ></div>
+                  <div className='flex-1 min-w-0'>
+                    <p className='text-sm font-medium kapwa-text-gray-800 truncate'>
+                      {color.name}
+                    </p>
+                    <p className='text-xs kapwa-text-gray-600 truncate'>
+                      {color.class}
+                    </p>
+                    <p className='text-xs kapwa-text-gray-500 truncate'>
+                      {color.maps}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Status Background Colors */}
+          <div>
+            <h3 className='text-lg font-semibold kapwa-text-gray-800 mb-4'>
+              Status Backgrounds
+            </h3>
+            <div className='space-y-2'>
+              {[
                 {
                   name: 'Info Default',
                   var: '--color-kapwa-bg-info-default',
@@ -543,35 +572,6 @@ const KapwaThemeDemo: React.FC<KapwaThemeDemoProps> = ({ className = '' }) => {
                   class: 'kapwa-bg-danger-weak',
                   maps: 'Red/50',
                 },
-              ].map(color => (
-                <div key={color.name} className='flex items-center gap-3'>
-                  <div
-                    className='w-8 h-8 rounded border kapwa-border-gray-200'
-                    style={{ backgroundColor: `var(${color.var})` }}
-                  ></div>
-                  <div className='flex-1 min-w-0'>
-                    <p className='text-sm font-medium kapwa-text-gray-800 truncate'>
-                      {color.name}
-                    </p>
-                    <p className='text-xs kapwa-text-gray-600 truncate'>
-                      {color.class}
-                    </p>
-                    <p className='text-xs kapwa-text-gray-500 truncate'>
-                      {color.maps}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Status Background Colors */}
-          <div>
-            <h3 className='text-lg font-semibold kapwa-text-gray-800 mb-4'>
-              Status Backgrounds
-            </h3>
-            <div className='space-y-2'>
-              {[
                 {
                   name: 'Warning Default',
                   var: '--color-kapwa-bg-warning-default',
