@@ -3,16 +3,21 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "concurrently -p \"[{name}]\" -n \"CLIENT,STORYBOOK\" -c \"bgBlue.bold,bgMagenta.bold\" \"npm run start:client\" \"npm run start:storybook\"",
-    "start:client": "vite",
+    "start:client": "vite --config vite.config-site.ts",
     "start:storybook": "storybook dev -p 6006",
-    "build": "npm run build:storybook && tsc && vite build",
+    "build-lib": "vite build --config vite.config-lib.ts && node scripts/generate-component-exports.mjs",
+    "build-site": "vite build --config vite.config-site.ts",
+    "build": "npm run build-lib && npm run build-site",
     "build:storybook": "storybook build -o ./public/storybook",
     "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
     "format": "prettier --write .",
     "wrangler": "wrangler",
-    "preview": "vite preview",
+    "preview": "vite preview --config vite.config-site.ts",
     "prepare": "husky"
   },
   "dependencies": {
@@ -99,12 +104,83 @@
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.3.0",
     "uuid": "^9.0.1",
-    "vite": "^5.4.2"
+    "vite": "^5.4.2",
+    "vite-plugin-dts": "^4.5.4"
   },
   "overrides": {
     "react-helmet-async": {
       "react": "^19.0.0",
       "react-dom": "^19.0.0"
+    }
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs"
+    },
+    "./utils": {
+      "import": "./dist/utils.js",
+      "types": "./dist/utils.d.ts",
+      "require": "./dist/utils.cjs"
+    },
+    "./banner": {
+      "import": "./dist/banner/index.tsx.js",
+      "types": "./dist/banner/index.d.ts",
+      "require": "./dist/banner/index.tsx.cjs"
+    },
+    "./button": {
+      "import": "./dist/button/index.tsx.js",
+      "types": "./dist/button/index.d.ts",
+      "require": "./dist/button/index.tsx.cjs"
+    },
+    "./button/hooks": {
+      "import": "./dist/button/hooks/index.ts.js",
+      "types": "./dist/button/hooks/index.d.ts",
+      "require": "./dist/button/hooks/index.ts.cjs"
+    },
+    "./card": {
+      "import": "./dist/card/index.tsx.js",
+      "types": "./dist/card/index.d.ts",
+      "require": "./dist/card/index.tsx.cjs"
+    },
+    "./input": {
+      "import": "./dist/input/index.tsx.js",
+      "types": "./dist/input/index.d.ts",
+      "require": "./dist/input/index.tsx.cjs"
+    },
+    "./label": {
+      "import": "./dist/label/index.tsx.js",
+      "types": "./dist/label/index.d.ts",
+      "require": "./dist/label/index.tsx.cjs"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./dist/index.d.ts"
+      ],
+      "utils": [
+        "./dist/utils.d.ts"
+      ],
+      "banner": [
+        "./dist/banner/index.d.ts"
+      ],
+      "button": [
+        "./dist/button/index.d.ts"
+      ],
+      "button/hooks": [
+        "./dist/button/hooks/index.d.ts"
+      ],
+      "card": [
+        "./dist/card/index.d.ts"
+      ],
+      "input": [
+        "./dist/input/index.d.ts"
+      ],
+      "label": [
+        "./dist/label/index.d.ts"
+      ]
     }
   }
 }

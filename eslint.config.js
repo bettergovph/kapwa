@@ -38,6 +38,7 @@ export default tseslint.config(
       ],
       'react/prop-types': 'off',
       'react/react-in-jsx-scope': 'off', // Not needed with React 17+ JSX transform
+      'react-refresh/only-export-components': 'off',
     },
     settings: {
       react: {

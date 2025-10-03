@@ -25,7 +25,8 @@
       "@ui/*": ["./src/components/ui/*"],
       "@layout/*": ["./src/components/layout/*"],
       "@pages/*": ["./src/pages/*"],
-      "@lib/*": ["./src/lib/*"]
+      "@lib/*": ["./src/lib/*"],
+      "@kapwa/*": ["./src/kapwa/*"]
     }
   },
   "include": ["src"]

@@ -1,6 +1,6 @@
 import React from 'react';
 import { cn } from '@lib/utils';
-import Button from '@ui/button/Button';
+import { Button } from '../button';
 
 export type BannerType = 'info' | 'warning' | 'error' | 'success' | 'default';
 
@@ -345,4 +345,4 @@ const Banner: React.FC<BannerProps> = ({
   );
 };
 
-export default Banner;
+export { Banner };

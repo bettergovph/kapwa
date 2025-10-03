@@ -1,6 +1,6 @@
 import React from 'react';
-import { Card, CardHeader, CardContent, CardImage } from '@ui/card/Card';
-import Button from '@ui/button/Button';
+import { Card, CardHeader, CardContent, CardImage } from '@kapwa/card';
+import { Button } from '@kapwa/button';
 import {
   Phone,
   Mail,
