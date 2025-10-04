@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, CardHeader, CardContent, CardImage } from '@ui/card/Card';
 import Button from '@ui/button/Button';
+import { KapwaThemeDemo } from '../kapwa';
 import {
   Phone,
   Mail,
@@ -9,37 +10,6 @@ import {
   Building,
   Globe,
 } from 'lucide-react';
-
-const ColorBlock = ({
-  color,
-  name,
-  value,
-}: {
-  color: string;
-  name: string;
-  value: string;
-}) => (
-  <div className='flex items-center space-x-2'>
-    <div className={`w-12 h-12 rounded-sm ${color}`} />
-    <div>
-      <div className='font-medium'>{name}</div>
-      <div className='text-sm text-gray-800'>{value}</div>
-    </div>
-  </div>
-);
-
-const TypographyExample = ({
-  className,
-  label,
-}: {
-  className: string;
-  label: string;
-}) => (
-  <div className='mb-4'>
-    <div className={className}>The quick brown fox jumps over the lazy dog</div>
-    <div className='text-sm text-gray-800 mt-1'>{label}</div>
-  </div>
-);
 
 const DesignGuide: React.FC = () => {
   const searchResults = [
@@ -86,125 +56,16 @@ const DesignGuide: React.FC = () => {
           Design Guidelines
         </h1>
 
-        {/* Typography Section */}
+        {/* Kapwa Design System Section */}
         <Card className='mb-8'>
           <CardHeader>
-            <h2 className='text-2xl font-semibold'>Typography</h2>
+            <h2 className='text-2xl font-semibold'>Kapwa Design System</h2>
             <p className='text-gray-800'>
-              Inter is our primary font family for clean, modern readability
+              Our comprehensive design token system built with Tailwind CSS v4
             </p>
           </CardHeader>
           <CardContent>
-            <TypographyExample
-              className='text-4xl font-bold'
-              label='Heading 1 - text-4xl font-bold'
-            />
-            <TypographyExample
-              className='text-3xl font-semibold'
-              label='Heading 2 - text-3xl font-semibold'
-            />
-            <TypographyExample
-              className='text-2xl font-medium'
-              label='Heading 3 - text-2xl font-medium'
-            />
-            <TypographyExample
-              className='text-xl'
-              label='Heading 4 - text-xl'
-            />
-            <TypographyExample className='text-base' label='Body - text-base' />
-            <TypographyExample className='text-sm' label='Small - text-sm' />
-          </CardContent>
-        </Card>
-
-        {/* Colors Section */}
-        <Card className='mb-8'>
-          <CardHeader>
-            <h2 className='text-2xl font-semibold'>Colors</h2>
-            <p className='text-gray-800'>Our color palette</p>
-          </CardHeader>
-          <CardContent>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
-              <div>
-                <h3 className='font-medium mb-4'>Primary (Blue)</h3>
-                <div className='space-y-4'>
-                  <ColorBlock
-                    color='bg-primary-500'
-                    name='Primary 500'
-                    value='#3b82f6'
-                  />
-                  <ColorBlock
-                    color='bg-primary-600'
-                    name='Primary 600'
-                    value='#2563eb'
-                  />
-                  <ColorBlock
-                    color='bg-primary-700'
-                    name='Primary 700'
-                    value='#1d4ed8'
-                  />
-                </div>
-              </div>
-              <div>
-                <h3 className='font-medium mb-4'>CivicTech (Orange)</h3>
-                <div className='space-y-4'>
-                  <ColorBlock
-                    color='bg-orange-500'
-                    name='Orange 500'
-                    value='#f97316'
-                  />
-                  <ColorBlock
-                    color='bg-orange-600'
-                    name='Orange 600'
-                    value='#ea580c'
-                  />
-                  <ColorBlock
-                    color='bg-red-500'
-                    name='Red 500'
-                    value='#ef4444'
-                  />
-                </div>
-              </div>
-              <div>
-                <h3 className='font-medium mb-4'>Accent (Pink)</h3>
-                <div className='space-y-4'>
-                  <ColorBlock
-                    color='bg-pink-500'
-                    name='Pink 500'
-                    value='#ec4899'
-                  />
-                  <ColorBlock
-                    color='bg-pink-600'
-                    name='Pink 600'
-                    value='#db2777'
-                  />
-                  <ColorBlock
-                    color='bg-purple-600'
-                    name='Purple 600'
-                    value='#9333ea'
-                  />
-                </div>
-              </div>
-              <div>
-                <h3 className='font-medium mb-4'>Neutral</h3>
-                <div className='space-y-4'>
-                  <ColorBlock
-                    color='bg-gray-500'
-                    name='Gray 500'
-                    value='#6b7280'
-                  />
-                  <ColorBlock
-                    color='bg-gray-700'
-                    name='Gray 700'
-                    value='#374151'
-                  />
-                  <ColorBlock
-                    color='bg-gray-900'
-                    name='Gray 900'
-                    value='#111827'
-                  />
-                </div>
-              </div>
-            </div>
+            <KapwaThemeDemo />
           </CardContent>
         </Card>
 
