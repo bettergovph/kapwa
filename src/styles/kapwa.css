@@ -253,15 +253,15 @@
   --ease-kapwa-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
   /* Kapwa Spacing Tokens */
-  --spacing-kapwa-3xs: 2px;
-  --spacing-kapwa-2xs: 4px;
-  --spacing-kapwa-xs: 8px;
-  --spacing-kapwa-sm: 12px;
-  --spacing-kapwa-md: 16px;
-  --spacing-kapwa-lg: 24px;
-  --spacing-kapwa-xl: 32px;
-  --spacing-kapwa-2xl: 40px;
-  --spacing-kapwa-3xl: 48px;
+  --spacing-kapwa-3xs: 0.125rem; /* 2px */
+  --spacing-kapwa-2xs: 0.25rem; /* 4px */
+  --spacing-kapwa-xs: 0.5rem; /* 8px */
+  --spacing-kapwa-sm: 0.75rem; /* 12px */
+  --spacing-kapwa-md: 1rem; /* 16px */
+  --spacing-kapwa-lg: 1.5rem; /* 24px */
+  --spacing-kapwa-xl: 2rem; /* 32px */
+  --spacing-kapwa-2xl: 2.5rem; /* 40px */
+  --spacing-kapwa-3xl: 3rem; /* 48px */
 }
 
 .kapwa-heading-xl {

@@ -773,55 +773,64 @@ const KapwaThemeDemo: React.FC<KapwaThemeDemoProps> = ({ className = '' }) => {
               {[
                 {
                   name: '3xs',
-                  value: '2px',
+                  value: '0.125rem',
+                  pixelValue: '2px',
                   var: '--spacing-kapwa-3xs',
                   class: 'kapwa-w-3xs',
                 },
                 {
                   name: '2xs',
-                  value: '4px',
+                  value: '0.25rem',
+                  pixelValue: '4px',
                   var: '--spacing-kapwa-2xs',
                   class: 'kapwa-w-2xs',
                 },
                 {
                   name: 'xs',
-                  value: '8px',
+                  value: '0.5rem',
+                  pixelValue: '8px',
                   var: '--spacing-kapwa-xs',
                   class: 'kapwa-w-xs',
                 },
                 {
                   name: 'sm',
-                  value: '12px',
+                  value: '0.75rem',
+                  pixelValue: '12px',
                   var: '--spacing-kapwa-sm',
                   class: 'kapwa-w-sm',
                 },
                 {
                   name: 'md',
-                  value: '16px',
+                  value: '1rem',
+                  pixelValue: '16px',
                   var: '--spacing-kapwa-md',
                   class: 'kapwa-w-md',
                 },
                 {
                   name: 'lg',
-                  value: '24px',
+                  value: '1.5rem',
+                  pixelValue: '24px',
                   var: '--spacing-kapwa-lg',
                   class: 'kapwa-w-lg',
                 },
                 {
                   name: 'xl',
-                  value: '32px',
+                  value: '2rem',
+                  pixelValue: '32px',
                   var: '--spacing-kapwa-xl',
                   class: 'kapwa-w-xl',
                 },
                 {
                   name: '2xl',
-                  value: '40px',
+                  value: '2.5rem',
+                  pixelValue: '40px',
                   var: '--spacing-kapwa-2xl',
                   class: 'kapwa-w-2xl',
                 },
                 {
                   name: '3xl',
-                  value: '48px',
+                  value: '3rem',
+                  pixelValue: '48px',
                   var: '--spacing-kapwa-3xl',
                   class: 'kapwa-w-3xl',
                 },
@@ -837,7 +846,7 @@ const KapwaThemeDemo: React.FC<KapwaThemeDemoProps> = ({ className = '' }) => {
                         spacing-{spacing.name}
                       </span>
                       <span className='text-xs kapwa-text-gray-600'>
-                        {spacing.value}
+                        {spacing.value} ({spacing.pixelValue})
                       </span>
                     </div>
                     <div className='text-xs font-mono kapwa-text-gray-500'>
