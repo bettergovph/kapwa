@@ -20,6 +20,6 @@
   },
   "registries": {
     "@v0": "https://v0.dev/chat/b/{name}",
-    "@kapwa": "https://github.com/bettergovph/kapwa/{name}"
+    "@kapwa": "https://github.com/bettergovph/kapwa"
   }
 }
