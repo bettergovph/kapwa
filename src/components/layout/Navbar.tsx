@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { X, Menu, ChevronDown, Globe } from 'lucide-react';
-import { mainNavigation } from '../../data/navigation';
-import { LanguageType } from '../../types';
+import { LanguageType, NavigationItem } from '../../types';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { LANGUAGES } from '../../i18n/languages';
 
+export const mainNavigation: NavigationItem[] = [];
 const isDev = import.meta.env.DEV;
 
 const Navbar: React.FC = () => {
