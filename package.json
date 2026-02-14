@@ -19,7 +19,6 @@
     "build:storybook": "storybook build -o ./site/storybook",
     "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
     "format": "prettier --write .",
-    "wrangler": "wrangler",
     "preview": "vite preview --config vite.config-site.ts",
     "prepare": "husky",
     "semantic-release": "semantic-release"
