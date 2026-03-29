@@ -14,14 +14,14 @@ export interface BannerProps {
         label: string;
         onClick: () => void;
         href?: string;
-        variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'link';
+        variant?: 'primary' | 'outline' | 'ghost' | 'link';
         size?: 'sm' | 'md' | 'lg';
       }
     | Array<{
         label: string;
         onClick: () => void;
         href?: string;
-        variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'link';
+        variant?: 'primary' | 'outline' | 'ghost' | 'link';
         size?: 'sm' | 'md' | 'lg';
       }>;
   className?: string;
@@ -160,8 +160,6 @@ const Banner: React.FC<BannerProps> = ({
     const variants = {
       primary:
         'bg-primary-500 text-white hover:bg-primary-600 focus:ring-primary-500',
-      secondary:
-        'bg-secondary-500 text-white hover:bg-secondary-600 focus:ring-secondary-500',
       outline:
         'bg-transparent border border-gray-300 text-gray-700 hover:bg-gray-50 focus:ring-primary-500',
       ghost:
@@ -191,7 +189,7 @@ const Banner: React.FC<BannerProps> = ({
       label: string;
       onClick: () => void;
       href?: string;
-      variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'link';
+      variant?: 'primary' | 'outline' | 'ghost' | 'link';
       size?: 'sm' | 'md' | 'lg';
     },
     index: number

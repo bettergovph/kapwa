@@ -90,7 +90,10 @@ const KapwaTokens: React.FC<KapwaTokensProps> = ({ className = '' }) => {
                 shade => (
                   <div key={shade} className='flex items-center gap-3'>
                     <div
-                      className={`w-8 h-8 rounded border kapwa-border-gray-200 kapwa-bg-brand-${shade}`}
+                      className='w-8 h-8 rounded border kapwa-border-gray-200'
+                      style={{
+                        backgroundColor: `var(--color-kapwa-brand-${shade})`,
+                      }}
                     ></div>
                     <div>
                       <p className='text-sm font-medium kapwa-text-gray-800'>
@@ -115,7 +118,10 @@ const KapwaTokens: React.FC<KapwaTokensProps> = ({ className = '' }) => {
                 shade => (
                   <div key={shade} className='flex items-center gap-3'>
                     <div
-                      className={`w-8 h-8 rounded border kapwa-border-gray-200 kapwa-bg-red-${shade}`}
+                      className='w-8 h-8 rounded border kapwa-border-gray-200'
+                      style={{
+                        backgroundColor: `var(--color-kapwa-red-${shade})`,
+                      }}
                     ></div>
                     <div>
                       <p className='text-sm font-medium kapwa-text-gray-800'>
@@ -140,7 +146,10 @@ const KapwaTokens: React.FC<KapwaTokensProps> = ({ className = '' }) => {
                 shade => (
                   <div key={shade} className='flex items-center gap-3'>
                     <div
-                      className={`w-8 h-8 rounded border kapwa-border-gray-200 kapwa-bg-green-${shade}`}
+                      className='w-8 h-8 rounded border kapwa-border-gray-200'
+                      style={{
+                        backgroundColor: `var(--color-kapwa-green-${shade})`,
+                      }}
                     ></div>
                     <div>
                       <p className='text-sm font-medium kapwa-text-gray-800'>
@@ -165,7 +174,10 @@ const KapwaTokens: React.FC<KapwaTokensProps> = ({ className = '' }) => {
                 shade => (
                   <div key={shade} className='flex items-center gap-3'>
                     <div
-                      className={`w-8 h-8 rounded border kapwa-border-gray-200 kapwa-bg-yellow-${shade}`}
+                      className='w-8 h-8 rounded border kapwa-border-gray-200'
+                      style={{
+                        backgroundColor: `var(--color-kapwa-yellow-${shade})`,
+                      }}
                     ></div>
                     <div>
                       <p className='text-sm font-medium kapwa-text-gray-800'>
@@ -190,7 +202,10 @@ const KapwaTokens: React.FC<KapwaTokensProps> = ({ className = '' }) => {
                 shade => (
                   <div key={shade} className='flex items-center gap-3'>
                     <div
-                      className={`w-8 h-8 rounded border kapwa-border-gray-200 kapwa-bg-orange-${shade}`}
+                      className='w-8 h-8 rounded border kapwa-border-gray-200'
+                      style={{
+                        backgroundColor: `var(--color-kapwa-orange-${shade})`,
+                      }}
                     ></div>
                     <div>
                       <p className='text-sm font-medium kapwa-text-gray-800'>
@@ -215,7 +230,10 @@ const KapwaTokens: React.FC<KapwaTokensProps> = ({ className = '' }) => {
                 shade => (
                   <div key={shade} className='flex items-center gap-3'>
                     <div
-                      className={`w-8 h-8 rounded border kapwa-border-gray-200 kapwa-bg-purple-${shade}`}
+                      className='w-8 h-8 rounded border kapwa-border-gray-200'
+                      style={{
+                        backgroundColor: `var(--color-kapwa-purple-${shade})`,
+                      }}
                     ></div>
                     <div>
                       <p className='text-sm font-medium kapwa-text-gray-800'>
@@ -240,7 +258,10 @@ const KapwaTokens: React.FC<KapwaTokensProps> = ({ className = '' }) => {
                 shade => (
                   <div key={shade} className='flex items-center gap-3'>
                     <div
-                      className={`w-8 h-8 rounded border kapwa-border-gray-200 kapwa-bg-blue-${shade}`}
+                      className='w-8 h-8 rounded border kapwa-border-gray-200'
+                      style={{
+                        backgroundColor: `var(--color-kapwa-blue-${shade})`,
+                      }}
                     ></div>
                     <div>
                       <p className='text-sm font-medium kapwa-text-gray-800'>
@@ -265,7 +286,10 @@ const KapwaTokens: React.FC<KapwaTokensProps> = ({ className = '' }) => {
                 shade => (
                   <div key={shade} className='flex items-center gap-3'>
                     <div
-                      className={`w-8 h-8 rounded border kapwa-border-gray-200 kapwa-bg-gray-${shade}`}
+                      className='w-8 h-8 rounded border kapwa-border-gray-200'
+                      style={{
+                        backgroundColor: `var(--color-kapwa-gray-${shade})`,
+                      }}
                     ></div>
                     <div>
                       <p className='text-sm font-medium kapwa-text-gray-800'>
@@ -289,7 +313,10 @@ const KapwaTokens: React.FC<KapwaTokensProps> = ({ className = '' }) => {
               {[50, 100, 200, 300].map(shade => (
                 <div key={shade} className='flex items-center gap-3'>
                   <div
-                    className={`w-8 h-8 rounded border kapwa-border-gray-200 kapwa-bg-neutral-${shade}`}
+                    className='w-8 h-8 rounded border kapwa-border-gray-200'
+                    style={{
+                      backgroundColor: `var(--color-kapwa-neutral-${shade})`,
+                    }}
                   ></div>
                   <div>
                     <p className='text-sm font-medium kapwa-text-gray-800'>
@@ -408,7 +435,7 @@ const KapwaTokens: React.FC<KapwaTokensProps> = ({ className = '' }) => {
                   name: 'Info',
                   var: '--color-kapwa-text-info',
                   class: 'kapwa-text-info',
-                  maps: 'Blue/600',
+                  maps: 'Brand/600',
                 },
               ].map(color => (
                 <div key={color.name} className='flex items-center gap-3'>
@@ -591,25 +618,25 @@ const KapwaTokens: React.FC<KapwaTokensProps> = ({ className = '' }) => {
                   name: 'Info Default',
                   var: '--color-kapwa-bg-info-default',
                   class: 'kapwa-bg-info-default',
-                  maps: 'Blue/600',
+                  maps: 'Brand/600',
                 },
                 {
                   name: 'Info Hover',
                   var: '--color-kapwa-bg-info-hover',
                   class: 'kapwa-bg-info-hover',
-                  maps: 'Blue/700',
+                  maps: 'Brand/700',
                 },
                 {
                   name: 'Info Active',
                   var: '--color-kapwa-bg-info-active',
                   class: 'kapwa-bg-info-active',
-                  maps: 'Blue/800',
+                  maps: 'Brand/800',
                 },
                 {
                   name: 'Info Weak',
                   var: '--color-kapwa-bg-info-weak',
                   class: 'kapwa-bg-info-weak',
-                  maps: 'Blue/50',
+                  maps: 'Brand/50',
                 },
                 {
                   name: 'Danger Default',
@@ -794,7 +821,7 @@ const KapwaTokens: React.FC<KapwaTokensProps> = ({ className = '' }) => {
                   name: 'Info',
                   var: '--color-kapwa-border-info',
                   class: 'kapwa-border-info',
-                  maps: 'Blue/600',
+                  maps: 'Brand/600',
                 },
               ].map(color => (
                 <div key={color.name} className='flex items-center gap-3'>
@@ -878,7 +905,10 @@ const KapwaTokens: React.FC<KapwaTokensProps> = ({ className = '' }) => {
                       className='kapwa-bg-gray-100 border kapwa-border-gray-200 rounded-lg'
                     >
                       <div
-                        className={`kapwa-bg-brand-500 rounded text-white text-xs font-mono space-y-1 kapwa-p-${spacing.name}`}
+                        className='kapwa-bg-brand-500 rounded kapwa-text-inverse text-xs font-mono space-y-1'
+                        style={{
+                          padding: `var(--spacing-kapwa-${spacing.name})`,
+                        }}
                       >
                         <div>.kapwa-p-{spacing.name}</div>
                         <div>
@@ -900,7 +930,10 @@ const KapwaTokens: React.FC<KapwaTokensProps> = ({ className = '' }) => {
                       className='kapwa-bg-gray-100 border kapwa-border-gray-200 rounded-lg'
                     >
                       <div
-                        className={`kapwa-bg-brand-500 rounded text-white text-xs font-mono space-y-1 kapwa-p-3xs kapwa-m-${spacing.name}`}
+                        className='kapwa-bg-brand-500 rounded kapwa-text-inverse text-xs font-mono space-y-1 kapwa-p-3xs'
+                        style={{
+                          margin: `var(--spacing-kapwa-${spacing.name})`,
+                        }}
                       >
                         <div>.kapwa-m-{spacing.name}</div>
                         <div>

@@ -6,1209 +6,1207 @@
 @custom-variant light (&:is(.light *));
 
 /* Safelist to ensure all Kapwa classes are generated */
-@layer utilities {
-  /* Neutral Colors */
-  .kapwa-bg-neutral-50 {
-    background-color: var(--color-kapwa-neutral-50);
-  }
-  .kapwa-bg-neutral-100 {
-    background-color: var(--color-kapwa-neutral-100);
-  }
-  .kapwa-bg-neutral-200 {
-    background-color: var(--color-kapwa-neutral-200);
-  }
-  .kapwa-bg-neutral-300 {
-    background-color: var(--color-kapwa-neutral-300);
-  }
+/* Neutral Colors */
+@utility kapwa-bg-neutral-50 {
+  background-color: var(--color-kapwa-neutral-50);
+}
+@utility kapwa-bg-neutral-100 {
+  background-color: var(--color-kapwa-neutral-100);
+}
+@utility kapwa-bg-neutral-200 {
+  background-color: var(--color-kapwa-neutral-200);
+}
+@utility kapwa-bg-neutral-300 {
+  background-color: var(--color-kapwa-neutral-300);
+}
 
-  /* Brand Colors */
-  .kapwa-bg-brand-50 {
-    background-color: var(--color-kapwa-brand-50);
-  }
-  .kapwa-bg-brand-100 {
-    background-color: var(--color-kapwa-brand-100);
-  }
-  .kapwa-bg-brand-200 {
-    background-color: var(--color-kapwa-brand-200);
-  }
-  .kapwa-bg-brand-300 {
-    background-color: var(--color-kapwa-brand-300);
-  }
-  .kapwa-bg-brand-400 {
-    background-color: var(--color-kapwa-brand-400);
-  }
-  .kapwa-bg-brand-500 {
-    background-color: var(--color-kapwa-brand-500);
-  }
-  .kapwa-bg-brand-600 {
-    background-color: var(--color-kapwa-brand-600);
-  }
-  .kapwa-bg-brand-700 {
-    background-color: var(--color-kapwa-brand-700);
-  }
-  .kapwa-bg-brand-800 {
-    background-color: var(--color-kapwa-brand-800);
-  }
-  .kapwa-bg-brand-900 {
-    background-color: var(--color-kapwa-brand-900);
-  }
-  .kapwa-bg-brand-950 {
-    background-color: var(--color-kapwa-brand-950);
-  }
+/* Brand Colors */
+@utility kapwa-bg-brand-50 {
+  background-color: var(--color-kapwa-brand-50);
+}
+@utility kapwa-bg-brand-100 {
+  background-color: var(--color-kapwa-brand-100);
+}
+@utility kapwa-bg-brand-200 {
+  background-color: var(--color-kapwa-brand-200);
+}
+@utility kapwa-bg-brand-300 {
+  background-color: var(--color-kapwa-brand-300);
+}
+@utility kapwa-bg-brand-400 {
+  background-color: var(--color-kapwa-brand-400);
+}
+@utility kapwa-bg-brand-500 {
+  background-color: var(--color-kapwa-brand-500);
+}
+@utility kapwa-bg-brand-600 {
+  background-color: var(--color-kapwa-brand-600);
+}
+@utility kapwa-bg-brand-700 {
+  background-color: var(--color-kapwa-brand-700);
+}
+@utility kapwa-bg-brand-800 {
+  background-color: var(--color-kapwa-brand-800);
+}
+@utility kapwa-bg-brand-900 {
+  background-color: var(--color-kapwa-brand-900);
+}
+@utility kapwa-bg-brand-950 {
+  background-color: var(--color-kapwa-brand-950);
+}
 
-  /* Red Colors */
-  .kapwa-bg-red-50 {
-    background-color: var(--color-kapwa-red-50);
-  }
-  .kapwa-bg-red-100 {
-    background-color: var(--color-kapwa-red-100);
-  }
-  .kapwa-bg-red-200 {
-    background-color: var(--color-kapwa-red-200);
-  }
-  .kapwa-bg-red-300 {
-    background-color: var(--color-kapwa-red-300);
-  }
-  .kapwa-bg-red-400 {
-    background-color: var(--color-kapwa-red-400);
-  }
-  .kapwa-bg-red-500 {
-    background-color: var(--color-kapwa-red-500);
-  }
-  .kapwa-bg-red-600 {
-    background-color: var(--color-kapwa-red-600);
-  }
-  .kapwa-bg-red-700 {
-    background-color: var(--color-kapwa-red-700);
-  }
-  .kapwa-bg-red-800 {
-    background-color: var(--color-kapwa-red-800);
-  }
-  .kapwa-bg-red-900 {
-    background-color: var(--color-kapwa-red-900);
-  }
-  .kapwa-bg-red-950 {
-    background-color: var(--color-kapwa-red-950);
-  }
+/* Red Colors */
+@utility kapwa-bg-red-50 {
+  background-color: var(--color-kapwa-red-50);
+}
+@utility kapwa-bg-red-100 {
+  background-color: var(--color-kapwa-red-100);
+}
+@utility kapwa-bg-red-200 {
+  background-color: var(--color-kapwa-red-200);
+}
+@utility kapwa-bg-red-300 {
+  background-color: var(--color-kapwa-red-300);
+}
+@utility kapwa-bg-red-400 {
+  background-color: var(--color-kapwa-red-400);
+}
+@utility kapwa-bg-red-500 {
+  background-color: var(--color-kapwa-red-500);
+}
+@utility kapwa-bg-red-600 {
+  background-color: var(--color-kapwa-red-600);
+}
+@utility kapwa-bg-red-700 {
+  background-color: var(--color-kapwa-red-700);
+}
+@utility kapwa-bg-red-800 {
+  background-color: var(--color-kapwa-red-800);
+}
+@utility kapwa-bg-red-900 {
+  background-color: var(--color-kapwa-red-900);
+}
+@utility kapwa-bg-red-950 {
+  background-color: var(--color-kapwa-red-950);
+}
 
-  /* Green Colors */
-  .kapwa-bg-green-50 {
-    background-color: var(--color-kapwa-green-50);
-  }
-  .kapwa-bg-green-100 {
-    background-color: var(--color-kapwa-green-100);
-  }
-  .kapwa-bg-green-200 {
-    background-color: var(--color-kapwa-green-200);
-  }
-  .kapwa-bg-green-300 {
-    background-color: var(--color-kapwa-green-300);
-  }
-  .kapwa-bg-green-400 {
-    background-color: var(--color-kapwa-green-400);
-  }
-  .kapwa-bg-green-500 {
-    background-color: var(--color-kapwa-green-500);
-  }
-  .kapwa-bg-green-600 {
-    background-color: var(--color-kapwa-green-600);
-  }
-  .kapwa-bg-green-700 {
-    background-color: var(--color-kapwa-green-700);
-  }
-  .kapwa-bg-green-800 {
-    background-color: var(--color-kapwa-green-800);
-  }
-  .kapwa-bg-green-900 {
-    background-color: var(--color-kapwa-green-900);
-  }
-  .kapwa-bg-green-950 {
-    background-color: var(--color-kapwa-green-950);
-  }
+/* Green Colors */
+@utility kapwa-bg-green-50 {
+  background-color: var(--color-kapwa-green-50);
+}
+@utility kapwa-bg-green-100 {
+  background-color: var(--color-kapwa-green-100);
+}
+@utility kapwa-bg-green-200 {
+  background-color: var(--color-kapwa-green-200);
+}
+@utility kapwa-bg-green-300 {
+  background-color: var(--color-kapwa-green-300);
+}
+@utility kapwa-bg-green-400 {
+  background-color: var(--color-kapwa-green-400);
+}
+@utility kapwa-bg-green-500 {
+  background-color: var(--color-kapwa-green-500);
+}
+@utility kapwa-bg-green-600 {
+  background-color: var(--color-kapwa-green-600);
+}
+@utility kapwa-bg-green-700 {
+  background-color: var(--color-kapwa-green-700);
+}
+@utility kapwa-bg-green-800 {
+  background-color: var(--color-kapwa-green-800);
+}
+@utility kapwa-bg-green-900 {
+  background-color: var(--color-kapwa-green-900);
+}
+@utility kapwa-bg-green-950 {
+  background-color: var(--color-kapwa-green-950);
+}
 
-  /* Blue Colors */
-  .kapwa-bg-blue-50 {
-    background-color: var(--color-kapwa-blue-50);
-  }
-  .kapwa-bg-blue-100 {
-    background-color: var(--color-kapwa-blue-100);
-  }
-  .kapwa-bg-blue-200 {
-    background-color: var(--color-kapwa-blue-200);
-  }
-  .kapwa-bg-blue-300 {
-    background-color: var(--color-kapwa-blue-300);
-  }
-  .kapwa-bg-blue-400 {
-    background-color: var(--color-kapwa-blue-400);
-  }
-  .kapwa-bg-blue-500 {
-    background-color: var(--color-kapwa-blue-500);
-  }
-  .kapwa-bg-blue-600 {
-    background-color: var(--color-kapwa-blue-600);
-  }
-  .kapwa-bg-blue-700 {
-    background-color: var(--color-kapwa-blue-700);
-  }
-  .kapwa-bg-blue-800 {
-    background-color: var(--color-kapwa-blue-800);
-  }
-  .kapwa-bg-blue-900 {
-    background-color: var(--color-kapwa-blue-900);
-  }
-  .kapwa-bg-blue-950 {
-    background-color: var(--color-kapwa-blue-950);
-  }
+/* Blue Colors */
+@utility kapwa-bg-blue-50 {
+  background-color: var(--color-kapwa-blue-50);
+}
+@utility kapwa-bg-blue-100 {
+  background-color: var(--color-kapwa-blue-100);
+}
+@utility kapwa-bg-blue-200 {
+  background-color: var(--color-kapwa-blue-200);
+}
+@utility kapwa-bg-blue-300 {
+  background-color: var(--color-kapwa-blue-300);
+}
+@utility kapwa-bg-blue-400 {
+  background-color: var(--color-kapwa-blue-400);
+}
+@utility kapwa-bg-blue-500 {
+  background-color: var(--color-kapwa-blue-500);
+}
+@utility kapwa-bg-blue-600 {
+  background-color: var(--color-kapwa-blue-600);
+}
+@utility kapwa-bg-blue-700 {
+  background-color: var(--color-kapwa-blue-700);
+}
+@utility kapwa-bg-blue-800 {
+  background-color: var(--color-kapwa-blue-800);
+}
+@utility kapwa-bg-blue-900 {
+  background-color: var(--color-kapwa-blue-900);
+}
+@utility kapwa-bg-blue-950 {
+  background-color: var(--color-kapwa-blue-950);
+}
 
-  /* Orange Colors */
-  .kapwa-bg-orange-50 {
-    background-color: var(--color-kapwa-orange-50);
-  }
-  .kapwa-bg-orange-100 {
-    background-color: var(--color-kapwa-orange-100);
-  }
-  .kapwa-bg-orange-200 {
-    background-color: var(--color-kapwa-orange-200);
-  }
-  .kapwa-bg-orange-300 {
-    background-color: var(--color-kapwa-orange-300);
-  }
-  .kapwa-bg-orange-400 {
-    background-color: var(--color-kapwa-orange-400);
-  }
-  .kapwa-bg-orange-500 {
-    background-color: var(--color-kapwa-orange-500);
-  }
-  .kapwa-bg-orange-600 {
-    background-color: var(--color-kapwa-orange-600);
-  }
-  .kapwa-bg-orange-700 {
-    background-color: var(--color-kapwa-orange-700);
-  }
-  .kapwa-bg-orange-800 {
-    background-color: var(--color-kapwa-orange-800);
-  }
-  .kapwa-bg-orange-900 {
-    background-color: var(--color-kapwa-orange-900);
-  }
-  .kapwa-bg-orange-950 {
-    background-color: var(--color-kapwa-orange-950);
-  }
+/* Orange Colors */
+@utility kapwa-bg-orange-50 {
+  background-color: var(--color-kapwa-orange-50);
+}
+@utility kapwa-bg-orange-100 {
+  background-color: var(--color-kapwa-orange-100);
+}
+@utility kapwa-bg-orange-200 {
+  background-color: var(--color-kapwa-orange-200);
+}
+@utility kapwa-bg-orange-300 {
+  background-color: var(--color-kapwa-orange-300);
+}
+@utility kapwa-bg-orange-400 {
+  background-color: var(--color-kapwa-orange-400);
+}
+@utility kapwa-bg-orange-500 {
+  background-color: var(--color-kapwa-orange-500);
+}
+@utility kapwa-bg-orange-600 {
+  background-color: var(--color-kapwa-orange-600);
+}
+@utility kapwa-bg-orange-700 {
+  background-color: var(--color-kapwa-orange-700);
+}
+@utility kapwa-bg-orange-800 {
+  background-color: var(--color-kapwa-orange-800);
+}
+@utility kapwa-bg-orange-900 {
+  background-color: var(--color-kapwa-orange-900);
+}
+@utility kapwa-bg-orange-950 {
+  background-color: var(--color-kapwa-orange-950);
+}
 
-  /* Yellow Colors */
-  .kapwa-bg-yellow-50 {
-    background-color: var(--color-kapwa-yellow-50);
-  }
-  .kapwa-bg-yellow-100 {
-    background-color: var(--color-kapwa-yellow-100);
-  }
-  .kapwa-bg-yellow-200 {
-    background-color: var(--color-kapwa-yellow-200);
-  }
-  .kapwa-bg-yellow-300 {
-    background-color: var(--color-kapwa-yellow-300);
-  }
-  .kapwa-bg-yellow-400 {
-    background-color: var(--color-kapwa-yellow-400);
-  }
-  .kapwa-bg-yellow-500 {
-    background-color: var(--color-kapwa-yellow-500);
-  }
-  .kapwa-bg-yellow-600 {
-    background-color: var(--color-kapwa-yellow-600);
-  }
-  .kapwa-bg-yellow-700 {
-    background-color: var(--color-kapwa-yellow-700);
-  }
-  .kapwa-bg-yellow-800 {
-    background-color: var(--color-kapwa-yellow-800);
-  }
-  .kapwa-bg-yellow-900 {
-    background-color: var(--color-kapwa-yellow-900);
-  }
-  .kapwa-bg-yellow-950 {
-    background-color: var(--color-kapwa-yellow-950);
-  }
+/* Yellow Colors */
+@utility kapwa-bg-yellow-50 {
+  background-color: var(--color-kapwa-yellow-50);
+}
+@utility kapwa-bg-yellow-100 {
+  background-color: var(--color-kapwa-yellow-100);
+}
+@utility kapwa-bg-yellow-200 {
+  background-color: var(--color-kapwa-yellow-200);
+}
+@utility kapwa-bg-yellow-300 {
+  background-color: var(--color-kapwa-yellow-300);
+}
+@utility kapwa-bg-yellow-400 {
+  background-color: var(--color-kapwa-yellow-400);
+}
+@utility kapwa-bg-yellow-500 {
+  background-color: var(--color-kapwa-yellow-500);
+}
+@utility kapwa-bg-yellow-600 {
+  background-color: var(--color-kapwa-yellow-600);
+}
+@utility kapwa-bg-yellow-700 {
+  background-color: var(--color-kapwa-yellow-700);
+}
+@utility kapwa-bg-yellow-800 {
+  background-color: var(--color-kapwa-yellow-800);
+}
+@utility kapwa-bg-yellow-900 {
+  background-color: var(--color-kapwa-yellow-900);
+}
+@utility kapwa-bg-yellow-950 {
+  background-color: var(--color-kapwa-yellow-950);
+}
 
-  /* Purple Colors */
-  .kapwa-bg-purple-50 {
-    background-color: var(--color-kapwa-purple-50);
-  }
-  .kapwa-bg-purple-100 {
-    background-color: var(--color-kapwa-purple-100);
-  }
-  .kapwa-bg-purple-200 {
-    background-color: var(--color-kapwa-purple-200);
-  }
-  .kapwa-bg-purple-300 {
-    background-color: var(--color-kapwa-purple-300);
-  }
-  .kapwa-bg-purple-400 {
-    background-color: var(--color-kapwa-purple-400);
-  }
-  .kapwa-bg-purple-500 {
-    background-color: var(--color-kapwa-purple-500);
-  }
-  .kapwa-bg-purple-600 {
-    background-color: var(--color-kapwa-purple-600);
-  }
-  .kapwa-bg-purple-700 {
-    background-color: var(--color-kapwa-purple-700);
-  }
-  .kapwa-bg-purple-800 {
-    background-color: var(--color-kapwa-purple-800);
-  }
-  .kapwa-bg-purple-900 {
-    background-color: var(--color-kapwa-purple-900);
-  }
-  .kapwa-bg-purple-950 {
-    background-color: var(--color-kapwa-purple-950);
-  }
+/* Purple Colors */
+@utility kapwa-bg-purple-50 {
+  background-color: var(--color-kapwa-purple-50);
+}
+@utility kapwa-bg-purple-100 {
+  background-color: var(--color-kapwa-purple-100);
+}
+@utility kapwa-bg-purple-200 {
+  background-color: var(--color-kapwa-purple-200);
+}
+@utility kapwa-bg-purple-300 {
+  background-color: var(--color-kapwa-purple-300);
+}
+@utility kapwa-bg-purple-400 {
+  background-color: var(--color-kapwa-purple-400);
+}
+@utility kapwa-bg-purple-500 {
+  background-color: var(--color-kapwa-purple-500);
+}
+@utility kapwa-bg-purple-600 {
+  background-color: var(--color-kapwa-purple-600);
+}
+@utility kapwa-bg-purple-700 {
+  background-color: var(--color-kapwa-purple-700);
+}
+@utility kapwa-bg-purple-800 {
+  background-color: var(--color-kapwa-purple-800);
+}
+@utility kapwa-bg-purple-900 {
+  background-color: var(--color-kapwa-purple-900);
+}
+@utility kapwa-bg-purple-950 {
+  background-color: var(--color-kapwa-purple-950);
+}
 
-  /* Gray Colors */
-  .kapwa-bg-gray-50 {
-    background-color: var(--color-kapwa-gray-50);
-  }
-  .kapwa-bg-gray-100 {
-    background-color: var(--color-kapwa-gray-100);
-  }
-  .kapwa-bg-gray-200 {
-    background-color: var(--color-kapwa-gray-200);
-  }
-  .kapwa-bg-gray-300 {
-    background-color: var(--color-kapwa-gray-300);
-  }
-  .kapwa-bg-gray-400 {
-    background-color: var(--color-kapwa-gray-400);
-  }
-  .kapwa-bg-gray-500 {
-    background-color: var(--color-kapwa-gray-500);
-  }
-  .kapwa-bg-gray-600 {
-    background-color: var(--color-kapwa-gray-600);
-  }
-  .kapwa-bg-gray-700 {
-    background-color: var(--color-kapwa-gray-700);
-  }
-  .kapwa-bg-gray-800 {
-    background-color: var(--color-kapwa-gray-800);
-  }
-  .kapwa-bg-gray-900 {
-    background-color: var(--color-kapwa-gray-900);
-  }
-  .kapwa-bg-gray-950 {
-    background-color: var(--color-kapwa-gray-950);
-  }
+/* Gray Colors */
+@utility kapwa-bg-gray-50 {
+  background-color: var(--color-kapwa-gray-50);
+}
+@utility kapwa-bg-gray-100 {
+  background-color: var(--color-kapwa-gray-100);
+}
+@utility kapwa-bg-gray-200 {
+  background-color: var(--color-kapwa-gray-200);
+}
+@utility kapwa-bg-gray-300 {
+  background-color: var(--color-kapwa-gray-300);
+}
+@utility kapwa-bg-gray-400 {
+  background-color: var(--color-kapwa-gray-400);
+}
+@utility kapwa-bg-gray-500 {
+  background-color: var(--color-kapwa-gray-500);
+}
+@utility kapwa-bg-gray-600 {
+  background-color: var(--color-kapwa-gray-600);
+}
+@utility kapwa-bg-gray-700 {
+  background-color: var(--color-kapwa-gray-700);
+}
+@utility kapwa-bg-gray-800 {
+  background-color: var(--color-kapwa-gray-800);
+}
+@utility kapwa-bg-gray-900 {
+  background-color: var(--color-kapwa-gray-900);
+}
+@utility kapwa-bg-gray-950 {
+  background-color: var(--color-kapwa-gray-950);
+}
 
-  /* Primitive Text Colors */
-  .kapwa-text-brand-500 {
-    color: var(--color-kapwa-brand-500);
-  }
-  .kapwa-text-brand-600 {
-    color: var(--color-kapwa-brand-600);
-  }
-  .kapwa-text-brand-700 {
-    color: var(--color-kapwa-brand-700);
-  }
-  .kapwa-text-brand-800 {
-    color: var(--color-kapwa-brand-800);
-  }
+/* Primitive Text Colors */
+@utility kapwa-text-brand-500 {
+  color: var(--color-kapwa-brand-500);
+}
+@utility kapwa-text-brand-600 {
+  color: var(--color-kapwa-brand-600);
+}
+@utility kapwa-text-brand-700 {
+  color: var(--color-kapwa-brand-700);
+}
+@utility kapwa-text-brand-800 {
+  color: var(--color-kapwa-brand-800);
+}
 
-  .kapwa-text-gray-600 {
-    color: var(--color-kapwa-gray-600);
-  }
-  .kapwa-text-gray-700 {
-    color: var(--color-kapwa-gray-700);
-  }
-  .kapwa-text-gray-800 {
-    color: var(--color-kapwa-gray-800);
-  }
+@utility kapwa-text-gray-600 {
+  color: var(--color-kapwa-gray-600);
+}
+@utility kapwa-text-gray-700 {
+  color: var(--color-kapwa-gray-700);
+}
+@utility kapwa-text-gray-800 {
+  color: var(--color-kapwa-gray-800);
+}
 
-  /* Primitive Border Colors */
-  .kapwa-border-gray-200 {
-    border-color: var(--color-kapwa-gray-200);
-  }
-  .kapwa-border-brand-200 {
-    border-color: var(--color-kapwa-brand-200);
-  }
-  .kapwa-border-brand-500 {
-    border-color: var(--color-kapwa-brand-500);
-  }
-  .kapwa-border-brand-700 {
-    border-color: var(--color-kapwa-brand-700);
-  }
-  .kapwa-border-orange-200 {
-    border-color: var(--color-kapwa-orange-200);
-  }
+/* Primitive Border Colors */
+@utility kapwa-border-gray-200 {
+  border-color: var(--color-kapwa-gray-200);
+}
+@utility kapwa-border-brand-200 {
+  border-color: var(--color-kapwa-brand-200);
+}
+@utility kapwa-border-brand-500 {
+  border-color: var(--color-kapwa-brand-500);
+}
+@utility kapwa-border-brand-700 {
+  border-color: var(--color-kapwa-brand-700);
+}
+@utility kapwa-border-orange-200 {
+  border-color: var(--color-kapwa-orange-200);
+}
 
-  /* Shadow Utilities */
-  .shadow-xs {
-    box-shadow: var(--shadow-xs);
-  }
-  .shadow-sm {
-    box-shadow: var(--shadow-sm);
-  }
-  .shadow-base {
-    box-shadow: var(--shadow-base);
-  }
-  .shadow-md {
-    box-shadow: var(--shadow-md);
-  }
-  .shadow-lg {
-    box-shadow: var(--shadow-lg);
-  }
+/* Shadow Utilities */
+@utility shadow-xs {
+  box-shadow: var(--shadow-xs);
+}
+@utility shadow-sm {
+  box-shadow: var(--shadow-sm);
+}
+@utility shadow-base {
+  box-shadow: var(--shadow-base);
+}
+@utility shadow-md {
+  box-shadow: var(--shadow-md);
+}
+@utility shadow-lg {
+  box-shadow: var(--shadow-lg);
+}
 
-  /* Kapwa Semantic Text Colors */
-  .kapwa-text-strong {
-    color: var(--color-kapwa-text-strong);
-  }
-  .kapwa-text-support {
-    color: var(--color-kapwa-text-support);
-  }
+/* Kapwa Semantic Text Colors */
+@utility kapwa-text-strong {
+  color: var(--color-kapwa-text-strong);
+}
+@utility kapwa-text-support {
+  color: var(--color-kapwa-text-support);
+}
 
-  .kapwa-text-disabled {
-    color: var(--color-kapwa-text-disabled);
-  }
-  .kapwa-text-on-disabled {
-    color: var(--color-kapwa-text-on-disabled);
-  }
-  .kapwa-text-inverse {
-    color: var(--color-kapwa-text-inverse);
-  }
-  .kapwa-text-inverse-subtle {
-    color: var(--color-kapwa-text-inverse-subtle);
-  }
-  .kapwa-text-link {
-    color: var(--color-kapwa-text-link);
-  }
-  .kapwa-text-link-hover {
-    color: var(--color-kapwa-text-link-hover);
-  }
-  .kapwa-text-link-visited {
-    color: var(--color-kapwa-text-link-visited);
-  }
-  .kapwa-text-brand {
-    color: var(--color-kapwa-text-brand);
-  }
-  .kapwa-text-brand-bold {
-    color: var(--color-kapwa-text-brand-bold);
-  }
-  .kapwa-text-success {
-    color: var(--color-kapwa-text-success);
-  }
-  .kapwa-text-danger {
-    color: var(--color-kapwa-text-danger);
-  }
-  .kapwa-text-warning {
-    color: var(--color-kapwa-text-warning);
-  }
-  .kapwa-text-info {
-    color: var(--color-kapwa-text-info);
-  }
-  .kapwa-text-accent-purple {
-    color: var(--color-kapwa-text-accent-purple);
-  }
-  .kapwa-text-accent-green {
-    color: var(--color-kapwa-text-accent-green);
-  }
-  .kapwa-text-accent-red {
-    color: var(--color-kapwa-text-accent-red);
-  }
-  .kapwa-text-accent-orange {
-    color: var(--color-kapwa-text-accent-orange);
-  }
-  .kapwa-text-accent-blue {
-    color: var(--color-kapwa-text-accent-blue);
-  }
+@utility kapwa-text-disabled {
+  color: var(--color-kapwa-text-disabled);
+}
+@utility kapwa-text-on-disabled {
+  color: var(--color-kapwa-text-on-disabled);
+}
+@utility kapwa-text-inverse {
+  color: var(--color-kapwa-text-inverse);
+}
+@utility kapwa-text-inverse-subtle {
+  color: var(--color-kapwa-text-inverse-subtle);
+}
+@utility kapwa-text-link {
+  color: var(--color-kapwa-text-link);
+}
+@utility kapwa-text-link-hover {
+  color: var(--color-kapwa-text-link-hover);
+}
+@utility kapwa-text-link-visited {
+  color: var(--color-kapwa-text-link-visited);
+}
+@utility kapwa-text-brand {
+  color: var(--color-kapwa-text-brand);
+}
+@utility kapwa-text-brand-bold {
+  color: var(--color-kapwa-text-brand-bold);
+}
+@utility kapwa-text-success {
+  color: var(--color-kapwa-text-success);
+}
+@utility kapwa-text-danger {
+  color: var(--color-kapwa-text-danger);
+}
+@utility kapwa-text-warning {
+  color: var(--color-kapwa-text-warning);
+}
+@utility kapwa-text-info {
+  color: var(--color-kapwa-text-info);
+}
+@utility kapwa-text-accent-purple {
+  color: var(--color-kapwa-text-accent-purple);
+}
+@utility kapwa-text-accent-green {
+  color: var(--color-kapwa-text-accent-green);
+}
+@utility kapwa-text-accent-red {
+  color: var(--color-kapwa-text-accent-red);
+}
+@utility kapwa-text-accent-orange {
+  color: var(--color-kapwa-text-accent-orange);
+}
+@utility kapwa-text-accent-blue {
+  color: var(--color-kapwa-text-accent-blue);
+}
 
-  /* Kapwa Semantic Background Colors */
-  .kapwa-bg-surface {
-    background-color: var(--color-kapwa-bg-surface);
-  }
-  .kapwa-bg-surface-raised {
-    background-color: var(--color-kapwa-bg-surface-raised);
-  }
-  .kapwa-bg-surface-brand {
-    background-color: var(--color-kapwa-bg-surface-brand);
-  }
-  .kapwa-bg-surface-bold {
-    background-color: var(--color-kapwa-bg-surface-bold);
-  }
-  .kapwa-bg-surface-adaptive {
-    background-color: var(--color-kapwa-bg-surface-adaptive);
-  }
-  .kapwa-bg-hover {
-    background-color: var(--color-kapwa-bg-hover);
-  }
-  .kapwa-bg-active {
-    background-color: var(--color-kapwa-bg-active);
-  }
-  .kapwa-bg-disabled {
-    background-color: var(--color-kapwa-bg-disabled);
-  }
-  .kapwa-bg-focus {
-    background-color: var(--color-kapwa-bg-focus);
-  }
-  .kapwa-bg-brand-active {
-    background-color: var(--color-kapwa-bg-brand-active);
-  }
-  .kapwa-bg-overlay {
-    background-color: var(--color-kapwa-bg-overlay);
-  }
+/* Kapwa Semantic Background Colors */
+@utility kapwa-bg-surface {
+  background-color: var(--color-kapwa-bg-surface);
+}
+@utility kapwa-bg-surface-raised {
+  background-color: var(--color-kapwa-bg-surface-raised);
+}
+@utility kapwa-bg-surface-brand {
+  background-color: var(--color-kapwa-bg-surface-brand);
+}
+@utility kapwa-bg-surface-bold {
+  background-color: var(--color-kapwa-bg-surface-bold);
+}
+@utility kapwa-bg-surface-adaptive {
+  background-color: var(--color-kapwa-bg-surface-adaptive);
+}
+@utility kapwa-bg-hover {
+  background-color: var(--color-kapwa-bg-hover);
+}
+@utility kapwa-bg-active {
+  background-color: var(--color-kapwa-bg-active);
+}
+@utility kapwa-bg-disabled {
+  background-color: var(--color-kapwa-bg-disabled);
+}
+@utility kapwa-bg-focus {
+  background-color: var(--color-kapwa-bg-focus);
+}
+@utility kapwa-bg-brand-active {
+  background-color: var(--color-kapwa-bg-brand-active);
+}
+@utility kapwa-bg-overlay {
+  background-color: var(--color-kapwa-bg-overlay);
+}
 
-  /* Kapwa Gray Background Colors */
-  .kapwa-bg-gray-default {
-    background-color: var(--color-kapwa-bg-gray-default);
-  }
-  .kapwa-bg-gray-hover {
-    background-color: var(--color-kapwa-bg-gray-hover);
-  }
-  .kapwa-bg-gray-active {
-    background-color: var(--color-kapwa-bg-gray-active);
-  }
-  .kapwa-bg-gray-disabled {
-    background-color: var(--color-kapwa-bg-gray-disabled);
-  }
+/* Kapwa Gray Background Colors */
+@utility kapwa-bg-gray-default {
+  background-color: var(--color-kapwa-bg-gray-default);
+}
+@utility kapwa-bg-gray-hover {
+  background-color: var(--color-kapwa-bg-gray-hover);
+}
+@utility kapwa-bg-gray-active {
+  background-color: var(--color-kapwa-bg-gray-active);
+}
+@utility kapwa-bg-gray-disabled {
+  background-color: var(--color-kapwa-bg-gray-disabled);
+}
 
-  /* Kapwa Brand Background Colors */
-  .kapwa-bg-brand-default {
-    background-color: var(--color-kapwa-bg-brand-default);
-  }
-  .kapwa-bg-brand-hover {
-    background-color: var(--color-kapwa-bg-brand-hover);
-  }
-  .kapwa-bg-brand-active {
-    background-color: var(--color-kapwa-bg-brand-active);
-  }
-  .kapwa-bg-brand-weak {
-    background-color: var(--color-kapwa-bg-brand-weak);
-  }
+/* Kapwa Brand Background Colors */
+@utility kapwa-bg-brand-default {
+  background-color: var(--color-kapwa-bg-brand-default);
+}
+@utility kapwa-bg-brand-hover {
+  background-color: var(--color-kapwa-bg-brand-hover);
+}
+@utility kapwa-bg-brand-active {
+  background-color: var(--color-kapwa-bg-brand-active);
+}
+@utility kapwa-bg-brand-weak {
+  background-color: var(--color-kapwa-bg-brand-weak);
+}
 
-  /* Kapwa Info Background Colors */
-  .kapwa-bg-info-default {
-    background-color: var(--color-kapwa-bg-info-default);
-  }
-  .kapwa-bg-info-hover {
-    background-color: var(--color-kapwa-bg-info-hover);
-  }
-  .kapwa-bg-info-active {
-    background-color: var(--color-kapwa-bg-info-active);
-  }
-  .kapwa-bg-info-weak {
-    background-color: var(--color-kapwa-bg-info-weak);
-  }
+/* Kapwa Info Background Colors */
+@utility kapwa-bg-info-default {
+  background-color: var(--color-kapwa-bg-info-default);
+}
+@utility kapwa-bg-info-hover {
+  background-color: var(--color-kapwa-bg-info-hover);
+}
+@utility kapwa-bg-info-active {
+  background-color: var(--color-kapwa-bg-info-active);
+}
+@utility kapwa-bg-info-weak {
+  background-color: var(--color-kapwa-bg-info-weak);
+}
 
-  /* Kapwa Danger Background Colors */
-  .kapwa-bg-danger-default {
-    background-color: var(--color-kapwa-bg-danger-default);
-  }
-  .kapwa-bg-danger-hover {
-    background-color: var(--color-kapwa-bg-danger-hover);
-  }
-  .kapwa-bg-danger-active {
-    background-color: var(--color-kapwa-bg-danger-active);
-  }
-  .kapwa-bg-danger-weak {
-    background-color: var(--color-kapwa-bg-danger-weak);
-  }
+/* Kapwa Danger Background Colors */
+@utility kapwa-bg-danger-default {
+  background-color: var(--color-kapwa-bg-danger-default);
+}
+@utility kapwa-bg-danger-hover {
+  background-color: var(--color-kapwa-bg-danger-hover);
+}
+@utility kapwa-bg-danger-active {
+  background-color: var(--color-kapwa-bg-danger-active);
+}
+@utility kapwa-bg-danger-weak {
+  background-color: var(--color-kapwa-bg-danger-weak);
+}
 
-  /* Kapwa Warning Background Colors */
-  .kapwa-bg-warning-default {
-    background-color: var(--color-kapwa-bg-warning-default);
-  }
-  .kapwa-bg-warning-hover {
-    background-color: var(--color-kapwa-bg-warning-hover);
-  }
-  .kapwa-bg-warning-active {
-    background-color: var(--color-kapwa-bg-warning-active);
-  }
-  .kapwa-bg-warning-weak {
-    background-color: var(--color-kapwa-bg-warning-weak);
-  }
+/* Kapwa Warning Background Colors */
+@utility kapwa-bg-warning-default {
+  background-color: var(--color-kapwa-bg-warning-default);
+}
+@utility kapwa-bg-warning-hover {
+  background-color: var(--color-kapwa-bg-warning-hover);
+}
+@utility kapwa-bg-warning-active {
+  background-color: var(--color-kapwa-bg-warning-active);
+}
+@utility kapwa-bg-warning-weak {
+  background-color: var(--color-kapwa-bg-warning-weak);
+}
 
-  /* Kapwa Success Background Colors */
-  .kapwa-bg-success-default {
-    background-color: var(--color-kapwa-bg-success-default);
-  }
-  .kapwa-bg-success-hover {
-    background-color: var(--color-kapwa-bg-success-hover);
-  }
-  .kapwa-bg-success-active {
-    background-color: var(--color-kapwa-bg-success-active);
-  }
-  .kapwa-bg-success-weak {
-    background-color: var(--color-kapwa-bg-success-weak);
-  }
+/* Kapwa Success Background Colors */
+@utility kapwa-bg-success-default {
+  background-color: var(--color-kapwa-bg-success-default);
+}
+@utility kapwa-bg-success-hover {
+  background-color: var(--color-kapwa-bg-success-hover);
+}
+@utility kapwa-bg-success-active {
+  background-color: var(--color-kapwa-bg-success-active);
+}
+@utility kapwa-bg-success-weak {
+  background-color: var(--color-kapwa-bg-success-weak);
+}
 
-  /* Kapwa Accent Background Colors */
-  .kapwa-bg-accent-purple-default {
-    background-color: var(--color-kapwa-bg-accent-purple-default);
-  }
-  .kapwa-bg-accent-purple-weak {
-    background-color: var(--color-kapwa-bg-accent-purple-weak);
-  }
-  .kapwa-bg-accent-green-default {
-    background-color: var(--color-kapwa-bg-accent-green-default);
-  }
-  .kapwa-bg-accent-green-weak {
-    background-color: var(--color-kapwa-bg-accent-green-weak);
-  }
-  .kapwa-bg-accent-red-default {
-    background-color: var(--color-kapwa-bg-accent-red-default);
-  }
-  .kapwa-bg-accent-red-weak {
-    background-color: var(--color-kapwa-bg-accent-red-weak);
-  }
-  .kapwa-bg-accent-orange-default {
-    background-color: var(--color-kapwa-bg-accent-orange-default);
-  }
-  .kapwa-bg-accent-orange-weak {
-    background-color: var(--color-kapwa-bg-accent-orange-weak);
-  }
-  .kapwa-bg-accent-blue-default {
-    background-color: var(--color-kapwa-bg-accent-blue-default);
-  }
-  .kapwa-bg-accent-blue-weak {
-    background-color: var(--color-kapwa-bg-accent-blue-weak);
-  }
-  .kapwa-bg-accent-yellow-default {
-    background-color: var(--color-kapwa-bg-accent-yellow-default);
-  }
-  .kapwa-bg-accent-yellow-weak {
-    background-color: var(--color-kapwa-bg-accent-yellow-weak);
-  }
+/* Kapwa Accent Background Colors */
+@utility kapwa-bg-accent-purple-default {
+  background-color: var(--color-kapwa-bg-accent-purple-default);
+}
+@utility kapwa-bg-accent-purple-weak {
+  background-color: var(--color-kapwa-bg-accent-purple-weak);
+}
+@utility kapwa-bg-accent-green-default {
+  background-color: var(--color-kapwa-bg-accent-green-default);
+}
+@utility kapwa-bg-accent-green-weak {
+  background-color: var(--color-kapwa-bg-accent-green-weak);
+}
+@utility kapwa-bg-accent-red-default {
+  background-color: var(--color-kapwa-bg-accent-red-default);
+}
+@utility kapwa-bg-accent-red-weak {
+  background-color: var(--color-kapwa-bg-accent-red-weak);
+}
+@utility kapwa-bg-accent-orange-default {
+  background-color: var(--color-kapwa-bg-accent-orange-default);
+}
+@utility kapwa-bg-accent-orange-weak {
+  background-color: var(--color-kapwa-bg-accent-orange-weak);
+}
+@utility kapwa-bg-accent-blue-default {
+  background-color: var(--color-kapwa-bg-accent-blue-default);
+}
+@utility kapwa-bg-accent-blue-weak {
+  background-color: var(--color-kapwa-bg-accent-blue-weak);
+}
+@utility kapwa-bg-accent-yellow-default {
+  background-color: var(--color-kapwa-bg-accent-yellow-default);
+}
+@utility kapwa-bg-accent-yellow-weak {
+  background-color: var(--color-kapwa-bg-accent-yellow-weak);
+}
 
-  /* Kapwa Border Colors */
-  .kapwa-border-strong {
-    border-color: var(--color-kapwa-border-strong);
-  }
-  .kapwa-border-weak {
-    border-color: var(--color-kapwa-border-weak);
-  }
-  .kapwa-border-inverse {
-    border-color: var(--color-kapwa-border-inverse);
-  }
-  .kapwa-border-on-disabled {
-    border-color: var(--color-kapwa-border-on-disabled);
-  }
-  .kapwa-border-focus {
-    border-color: var(--color-kapwa-border-focus);
-  }
-  .kapwa-border-brand {
-    border-color: var(--color-kapwa-border-brand);
-  }
-  .kapwa-border-success {
-    border-color: var(--color-kapwa-border-success);
-  }
-  .kapwa-border-danger {
-    border-color: var(--color-kapwa-border-danger);
-  }
-  .kapwa-border-warning {
-    border-color: var(--color-kapwa-border-warning);
-  }
-  .kapwa-border-info {
-    border-color: var(--color-kapwa-border-info);
-  }
+/* Kapwa Border Colors */
+@utility kapwa-border-strong {
+  border-color: var(--color-kapwa-border-strong);
+}
+@utility kapwa-border-weak {
+  border-color: var(--color-kapwa-border-weak);
+}
+@utility kapwa-border-inverse {
+  border-color: var(--color-kapwa-border-inverse);
+}
+@utility kapwa-border-on-disabled {
+  border-color: var(--color-kapwa-border-on-disabled);
+}
+@utility kapwa-border-focus {
+  border-color: var(--color-kapwa-border-focus);
+}
+@utility kapwa-border-brand {
+  border-color: var(--color-kapwa-border-brand);
+}
+@utility kapwa-border-success {
+  border-color: var(--color-kapwa-border-success);
+}
+@utility kapwa-border-danger {
+  border-color: var(--color-kapwa-border-danger);
+}
+@utility kapwa-border-warning {
+  border-color: var(--color-kapwa-border-warning);
+}
+@utility kapwa-border-info {
+  border-color: var(--color-kapwa-border-info);
+}
 
-  /* Kapwa Spacing Utilities - Margin */
-  .kapwa-m-3xs {
-    margin: var(--spacing-kapwa-3xs);
-  }
-  .kapwa-m-2xs {
-    margin: var(--spacing-kapwa-2xs);
-  }
-  .kapwa-m-xs {
-    margin: var(--spacing-kapwa-xs);
-  }
-  .kapwa-m-sm {
-    margin: var(--spacing-kapwa-sm);
-  }
-  .kapwa-m-md {
-    margin: var(--spacing-kapwa-md);
-  }
-  .kapwa-m-lg {
-    margin: var(--spacing-kapwa-lg);
-  }
-  .kapwa-m-xl {
-    margin: var(--spacing-kapwa-xl);
-  }
-  .kapwa-m-2xl {
-    margin: var(--spacing-kapwa-2xl);
-  }
-  .kapwa-m-3xl {
-    margin: var(--spacing-kapwa-3xl);
-  }
+/* Kapwa Spacing Utilities - Margin */
+@utility kapwa-m-3xs {
+  margin: var(--spacing-kapwa-3xs);
+}
+@utility kapwa-m-2xs {
+  margin: var(--spacing-kapwa-2xs);
+}
+@utility kapwa-m-xs {
+  margin: var(--spacing-kapwa-xs);
+}
+@utility kapwa-m-sm {
+  margin: var(--spacing-kapwa-sm);
+}
+@utility kapwa-m-md {
+  margin: var(--spacing-kapwa-md);
+}
+@utility kapwa-m-lg {
+  margin: var(--spacing-kapwa-lg);
+}
+@utility kapwa-m-xl {
+  margin: var(--spacing-kapwa-xl);
+}
+@utility kapwa-m-2xl {
+  margin: var(--spacing-kapwa-2xl);
+}
+@utility kapwa-m-3xl {
+  margin: var(--spacing-kapwa-3xl);
+}
 
-  .kapwa-mx-3xs {
-    margin-left: var(--spacing-kapwa-3xs);
-    margin-right: var(--spacing-kapwa-3xs);
-  }
-  .kapwa-mx-2xs {
-    margin-left: var(--spacing-kapwa-2xs);
-    margin-right: var(--spacing-kapwa-2xs);
-  }
-  .kapwa-mx-xs {
-    margin-left: var(--spacing-kapwa-xs);
-    margin-right: var(--spacing-kapwa-xs);
-  }
-  .kapwa-mx-sm {
-    margin-left: var(--spacing-kapwa-sm);
-    margin-right: var(--spacing-kapwa-sm);
-  }
-  .kapwa-mx-md {
-    margin-left: var(--spacing-kapwa-md);
-    margin-right: var(--spacing-kapwa-md);
-  }
-  .kapwa-mx-lg {
-    margin-left: var(--spacing-kapwa-lg);
-    margin-right: var(--spacing-kapwa-lg);
-  }
-  .kapwa-mx-xl {
-    margin-left: var(--spacing-kapwa-xl);
-    margin-right: var(--spacing-kapwa-xl);
-  }
-  .kapwa-mx-2xl {
-    margin-left: var(--spacing-kapwa-2xl);
-    margin-right: var(--spacing-kapwa-2xl);
-  }
-  .kapwa-mx-3xl {
-    margin-left: var(--spacing-kapwa-3xl);
-    margin-right: var(--spacing-kapwa-3xl);
-  }
+@utility kapwa-mx-3xs {
+  margin-left: var(--spacing-kapwa-3xs);
+  margin-right: var(--spacing-kapwa-3xs);
+}
+@utility kapwa-mx-2xs {
+  margin-left: var(--spacing-kapwa-2xs);
+  margin-right: var(--spacing-kapwa-2xs);
+}
+@utility kapwa-mx-xs {
+  margin-left: var(--spacing-kapwa-xs);
+  margin-right: var(--spacing-kapwa-xs);
+}
+@utility kapwa-mx-sm {
+  margin-left: var(--spacing-kapwa-sm);
+  margin-right: var(--spacing-kapwa-sm);
+}
+@utility kapwa-mx-md {
+  margin-left: var(--spacing-kapwa-md);
+  margin-right: var(--spacing-kapwa-md);
+}
+@utility kapwa-mx-lg {
+  margin-left: var(--spacing-kapwa-lg);
+  margin-right: var(--spacing-kapwa-lg);
+}
+@utility kapwa-mx-xl {
+  margin-left: var(--spacing-kapwa-xl);
+  margin-right: var(--spacing-kapwa-xl);
+}
+@utility kapwa-mx-2xl {
+  margin-left: var(--spacing-kapwa-2xl);
+  margin-right: var(--spacing-kapwa-2xl);
+}
+@utility kapwa-mx-3xl {
+  margin-left: var(--spacing-kapwa-3xl);
+  margin-right: var(--spacing-kapwa-3xl);
+}
 
-  .kapwa-my-3xs {
-    margin-top: var(--spacing-kapwa-3xs);
-    margin-bottom: var(--spacing-kapwa-3xs);
-  }
-  .kapwa-my-2xs {
-    margin-top: var(--spacing-kapwa-2xs);
-    margin-bottom: var(--spacing-kapwa-2xs);
-  }
-  .kapwa-my-xs {
-    margin-top: var(--spacing-kapwa-xs);
-    margin-bottom: var(--spacing-kapwa-xs);
-  }
-  .kapwa-my-sm {
-    margin-top: var(--spacing-kapwa-sm);
-    margin-bottom: var(--spacing-kapwa-sm);
-  }
-  .kapwa-my-md {
-    margin-top: var(--spacing-kapwa-md);
-    margin-bottom: var(--spacing-kapwa-md);
-  }
-  .kapwa-my-lg {
-    margin-top: var(--spacing-kapwa-lg);
-    margin-bottom: var(--spacing-kapwa-lg);
-  }
-  .kapwa-my-xl {
-    margin-top: var(--spacing-kapwa-xl);
-    margin-bottom: var(--spacing-kapwa-xl);
-  }
-  .kapwa-my-2xl {
-    margin-top: var(--spacing-kapwa-2xl);
-    margin-bottom: var(--spacing-kapwa-2xl);
-  }
-  .kapwa-my-3xl {
-    margin-top: var(--spacing-kapwa-3xl);
-    margin-bottom: var(--spacing-kapwa-3xl);
-  }
+@utility kapwa-my-3xs {
+  margin-top: var(--spacing-kapwa-3xs);
+  margin-bottom: var(--spacing-kapwa-3xs);
+}
+@utility kapwa-my-2xs {
+  margin-top: var(--spacing-kapwa-2xs);
+  margin-bottom: var(--spacing-kapwa-2xs);
+}
+@utility kapwa-my-xs {
+  margin-top: var(--spacing-kapwa-xs);
+  margin-bottom: var(--spacing-kapwa-xs);
+}
+@utility kapwa-my-sm {
+  margin-top: var(--spacing-kapwa-sm);
+  margin-bottom: var(--spacing-kapwa-sm);
+}
+@utility kapwa-my-md {
+  margin-top: var(--spacing-kapwa-md);
+  margin-bottom: var(--spacing-kapwa-md);
+}
+@utility kapwa-my-lg {
+  margin-top: var(--spacing-kapwa-lg);
+  margin-bottom: var(--spacing-kapwa-lg);
+}
+@utility kapwa-my-xl {
+  margin-top: var(--spacing-kapwa-xl);
+  margin-bottom: var(--spacing-kapwa-xl);
+}
+@utility kapwa-my-2xl {
+  margin-top: var(--spacing-kapwa-2xl);
+  margin-bottom: var(--spacing-kapwa-2xl);
+}
+@utility kapwa-my-3xl {
+  margin-top: var(--spacing-kapwa-3xl);
+  margin-bottom: var(--spacing-kapwa-3xl);
+}
 
-  .kapwa-ms-3xs {
-    margin-inline-start: var(--spacing-kapwa-3xs);
-  }
-  .kapwa-ms-2xs {
-    margin-inline-start: var(--spacing-kapwa-2xs);
-  }
-  .kapwa-ms-xs {
-    margin-inline-start: var(--spacing-kapwa-xs);
-  }
-  .kapwa-ms-sm {
-    margin-inline-start: var(--spacing-kapwa-sm);
-  }
-  .kapwa-ms-md {
-    margin-inline-start: var(--spacing-kapwa-md);
-  }
-  .kapwa-ms-lg {
-    margin-inline-start: var(--spacing-kapwa-lg);
-  }
-  .kapwa-ms-xl {
-    margin-inline-start: var(--spacing-kapwa-xl);
-  }
-  .kapwa-ms-2xl {
-    margin-inline-start: var(--spacing-kapwa-2xl);
-  }
-  .kapwa-ms-3xl {
-    margin-inline-start: var(--spacing-kapwa-3xl);
-  }
+@utility kapwa-ms-3xs {
+  margin-inline-start: var(--spacing-kapwa-3xs);
+}
+@utility kapwa-ms-2xs {
+  margin-inline-start: var(--spacing-kapwa-2xs);
+}
+@utility kapwa-ms-xs {
+  margin-inline-start: var(--spacing-kapwa-xs);
+}
+@utility kapwa-ms-sm {
+  margin-inline-start: var(--spacing-kapwa-sm);
+}
+@utility kapwa-ms-md {
+  margin-inline-start: var(--spacing-kapwa-md);
+}
+@utility kapwa-ms-lg {
+  margin-inline-start: var(--spacing-kapwa-lg);
+}
+@utility kapwa-ms-xl {
+  margin-inline-start: var(--spacing-kapwa-xl);
+}
+@utility kapwa-ms-2xl {
+  margin-inline-start: var(--spacing-kapwa-2xl);
+}
+@utility kapwa-ms-3xl {
+  margin-inline-start: var(--spacing-kapwa-3xl);
+}
 
-  .kapwa-me-3xs {
-    margin-inline-end: var(--spacing-kapwa-3xs);
-  }
-  .kapwa-me-2xs {
-    margin-inline-end: var(--spacing-kapwa-2xs);
-  }
-  .kapwa-me-xs {
-    margin-inline-end: var(--spacing-kapwa-xs);
-  }
-  .kapwa-me-sm {
-    margin-inline-end: var(--spacing-kapwa-sm);
-  }
-  .kapwa-me-md {
-    margin-inline-end: var(--spacing-kapwa-md);
-  }
-  .kapwa-me-lg {
-    margin-inline-end: var(--spacing-kapwa-lg);
-  }
-  .kapwa-me-xl {
-    margin-inline-end: var(--spacing-kapwa-xl);
-  }
-  .kapwa-me-2xl {
-    margin-inline-end: var(--spacing-kapwa-2xl);
-  }
-  .kapwa-me-3xl {
-    margin-inline-end: var(--spacing-kapwa-3xl);
-  }
+@utility kapwa-me-3xs {
+  margin-inline-end: var(--spacing-kapwa-3xs);
+}
+@utility kapwa-me-2xs {
+  margin-inline-end: var(--spacing-kapwa-2xs);
+}
+@utility kapwa-me-xs {
+  margin-inline-end: var(--spacing-kapwa-xs);
+}
+@utility kapwa-me-sm {
+  margin-inline-end: var(--spacing-kapwa-sm);
+}
+@utility kapwa-me-md {
+  margin-inline-end: var(--spacing-kapwa-md);
+}
+@utility kapwa-me-lg {
+  margin-inline-end: var(--spacing-kapwa-lg);
+}
+@utility kapwa-me-xl {
+  margin-inline-end: var(--spacing-kapwa-xl);
+}
+@utility kapwa-me-2xl {
+  margin-inline-end: var(--spacing-kapwa-2xl);
+}
+@utility kapwa-me-3xl {
+  margin-inline-end: var(--spacing-kapwa-3xl);
+}
 
-  .kapwa-mt-3xs {
-    margin-top: var(--spacing-kapwa-3xs);
-  }
-  .kapwa-mt-2xs {
-    margin-top: var(--spacing-kapwa-2xs);
-  }
-  .kapwa-mt-xs {
-    margin-top: var(--spacing-kapwa-xs);
-  }
-  .kapwa-mt-sm {
-    margin-top: var(--spacing-kapwa-sm);
-  }
-  .kapwa-mt-md {
-    margin-top: var(--spacing-kapwa-md);
-  }
-  .kapwa-mt-lg {
-    margin-top: var(--spacing-kapwa-lg);
-  }
-  .kapwa-mt-xl {
-    margin-top: var(--spacing-kapwa-xl);
-  }
-  .kapwa-mt-2xl {
-    margin-top: var(--spacing-kapwa-2xl);
-  }
-  .kapwa-mt-3xl {
-    margin-top: var(--spacing-kapwa-3xl);
-  }
+@utility kapwa-mt-3xs {
+  margin-top: var(--spacing-kapwa-3xs);
+}
+@utility kapwa-mt-2xs {
+  margin-top: var(--spacing-kapwa-2xs);
+}
+@utility kapwa-mt-xs {
+  margin-top: var(--spacing-kapwa-xs);
+}
+@utility kapwa-mt-sm {
+  margin-top: var(--spacing-kapwa-sm);
+}
+@utility kapwa-mt-md {
+  margin-top: var(--spacing-kapwa-md);
+}
+@utility kapwa-mt-lg {
+  margin-top: var(--spacing-kapwa-lg);
+}
+@utility kapwa-mt-xl {
+  margin-top: var(--spacing-kapwa-xl);
+}
+@utility kapwa-mt-2xl {
+  margin-top: var(--spacing-kapwa-2xl);
+}
+@utility kapwa-mt-3xl {
+  margin-top: var(--spacing-kapwa-3xl);
+}
 
-  .kapwa-mr-3xs {
-    margin-right: var(--spacing-kapwa-3xs);
-  }
-  .kapwa-mr-2xs {
-    margin-right: var(--spacing-kapwa-2xs);
-  }
-  .kapwa-mr-xs {
-    margin-right: var(--spacing-kapwa-xs);
-  }
-  .kapwa-mr-sm {
-    margin-right: var(--spacing-kapwa-sm);
-  }
-  .kapwa-mr-md {
-    margin-right: var(--spacing-kapwa-md);
-  }
-  .kapwa-mr-lg {
-    margin-right: var(--spacing-kapwa-lg);
-  }
-  .kapwa-mr-xl {
-    margin-right: var(--spacing-kapwa-xl);
-  }
-  .kapwa-mr-2xl {
-    margin-right: var(--spacing-kapwa-2xl);
-  }
-  .kapwa-mr-3xl {
-    margin-right: var(--spacing-kapwa-3xl);
-  }
+@utility kapwa-mr-3xs {
+  margin-right: var(--spacing-kapwa-3xs);
+}
+@utility kapwa-mr-2xs {
+  margin-right: var(--spacing-kapwa-2xs);
+}
+@utility kapwa-mr-xs {
+  margin-right: var(--spacing-kapwa-xs);
+}
+@utility kapwa-mr-sm {
+  margin-right: var(--spacing-kapwa-sm);
+}
+@utility kapwa-mr-md {
+  margin-right: var(--spacing-kapwa-md);
+}
+@utility kapwa-mr-lg {
+  margin-right: var(--spacing-kapwa-lg);
+}
+@utility kapwa-mr-xl {
+  margin-right: var(--spacing-kapwa-xl);
+}
+@utility kapwa-mr-2xl {
+  margin-right: var(--spacing-kapwa-2xl);
+}
+@utility kapwa-mr-3xl {
+  margin-right: var(--spacing-kapwa-3xl);
+}
 
-  .kapwa-mb-3xs {
-    margin-bottom: var(--spacing-kapwa-3xs);
-  }
-  .kapwa-mb-2xs {
-    margin-bottom: var(--spacing-kapwa-2xs);
-  }
-  .kapwa-mb-xs {
-    margin-bottom: var(--spacing-kapwa-xs);
-  }
-  .kapwa-mb-sm {
-    margin-bottom: var(--spacing-kapwa-sm);
-  }
-  .kapwa-mb-md {
-    margin-bottom: var(--spacing-kapwa-md);
-  }
-  .kapwa-mb-lg {
-    margin-bottom: var(--spacing-kapwa-lg);
-  }
-  .kapwa-mb-xl {
-    margin-bottom: var(--spacing-kapwa-xl);
-  }
-  .kapwa-mb-2xl {
-    margin-bottom: var(--spacing-kapwa-2xl);
-  }
-  .kapwa-mb-3xl {
-    margin-bottom: var(--spacing-kapwa-3xl);
-  }
+@utility kapwa-mb-3xs {
+  margin-bottom: var(--spacing-kapwa-3xs);
+}
+@utility kapwa-mb-2xs {
+  margin-bottom: var(--spacing-kapwa-2xs);
+}
+@utility kapwa-mb-xs {
+  margin-bottom: var(--spacing-kapwa-xs);
+}
+@utility kapwa-mb-sm {
+  margin-bottom: var(--spacing-kapwa-sm);
+}
+@utility kapwa-mb-md {
+  margin-bottom: var(--spacing-kapwa-md);
+}
+@utility kapwa-mb-lg {
+  margin-bottom: var(--spacing-kapwa-lg);
+}
+@utility kapwa-mb-xl {
+  margin-bottom: var(--spacing-kapwa-xl);
+}
+@utility kapwa-mb-2xl {
+  margin-bottom: var(--spacing-kapwa-2xl);
+}
+@utility kapwa-mb-3xl {
+  margin-bottom: var(--spacing-kapwa-3xl);
+}
 
-  .kapwa-ml-3xs {
-    margin-left: var(--spacing-kapwa-3xs);
-  }
-  .kapwa-ml-2xs {
-    margin-left: var(--spacing-kapwa-2xs);
-  }
-  .kapwa-ml-xs {
-    margin-left: var(--spacing-kapwa-xs);
-  }
-  .kapwa-ml-sm {
-    margin-left: var(--spacing-kapwa-sm);
-  }
-  .kapwa-ml-md {
-    margin-left: var(--spacing-kapwa-md);
-  }
-  .kapwa-ml-lg {
-    margin-left: var(--spacing-kapwa-lg);
-  }
-  .kapwa-ml-xl {
-    margin-left: var(--spacing-kapwa-xl);
-  }
-  .kapwa-ml-2xl {
-    margin-left: var(--spacing-kapwa-2xl);
-  }
-  .kapwa-ml-3xl {
-    margin-left: var(--spacing-kapwa-3xl);
-  }
+@utility kapwa-ml-3xs {
+  margin-left: var(--spacing-kapwa-3xs);
+}
+@utility kapwa-ml-2xs {
+  margin-left: var(--spacing-kapwa-2xs);
+}
+@utility kapwa-ml-xs {
+  margin-left: var(--spacing-kapwa-xs);
+}
+@utility kapwa-ml-sm {
+  margin-left: var(--spacing-kapwa-sm);
+}
+@utility kapwa-ml-md {
+  margin-left: var(--spacing-kapwa-md);
+}
+@utility kapwa-ml-lg {
+  margin-left: var(--spacing-kapwa-lg);
+}
+@utility kapwa-ml-xl {
+  margin-left: var(--spacing-kapwa-xl);
+}
+@utility kapwa-ml-2xl {
+  margin-left: var(--spacing-kapwa-2xl);
+}
+@utility kapwa-ml-3xl {
+  margin-left: var(--spacing-kapwa-3xl);
+}
 
-  /* Kapwa Spacing Utilities - Padding */
-  .kapwa-p-3xs {
-    padding: var(--spacing-kapwa-3xs);
-  }
-  .kapwa-p-2xs {
-    padding: var(--spacing-kapwa-2xs);
-  }
-  .kapwa-p-xs {
-    padding: var(--spacing-kapwa-xs);
-  }
-  .kapwa-p-sm {
-    padding: var(--spacing-kapwa-sm);
-  }
-  .kapwa-p-md {
-    padding: var(--spacing-kapwa-md);
-  }
-  .kapwa-p-lg {
-    padding: var(--spacing-kapwa-lg);
-  }
-  .kapwa-p-xl {
-    padding: var(--spacing-kapwa-xl);
-  }
-  .kapwa-p-2xl {
-    padding: var(--spacing-kapwa-2xl);
-  }
-  .kapwa-p-3xl {
-    padding: var(--spacing-kapwa-3xl);
-  }
+/* Kapwa Spacing Utilities - Padding */
+@utility kapwa-p-3xs {
+  padding: var(--spacing-kapwa-3xs);
+}
+@utility kapwa-p-2xs {
+  padding: var(--spacing-kapwa-2xs);
+}
+@utility kapwa-p-xs {
+  padding: var(--spacing-kapwa-xs);
+}
+@utility kapwa-p-sm {
+  padding: var(--spacing-kapwa-sm);
+}
+@utility kapwa-p-md {
+  padding: var(--spacing-kapwa-md);
+}
+@utility kapwa-p-lg {
+  padding: var(--spacing-kapwa-lg);
+}
+@utility kapwa-p-xl {
+  padding: var(--spacing-kapwa-xl);
+}
+@utility kapwa-p-2xl {
+  padding: var(--spacing-kapwa-2xl);
+}
+@utility kapwa-p-3xl {
+  padding: var(--spacing-kapwa-3xl);
+}
 
-  .kapwa-px-3xs {
-    padding-left: var(--spacing-kapwa-3xs);
-    padding-right: var(--spacing-kapwa-3xs);
-  }
-  .kapwa-px-2xs {
-    padding-left: var(--spacing-kapwa-2xs);
-    padding-right: var(--spacing-kapwa-2xs);
-  }
-  .kapwa-px-xs {
-    padding-left: var(--spacing-kapwa-xs);
-    padding-right: var(--spacing-kapwa-xs);
-  }
-  .kapwa-px-sm {
-    padding-left: var(--spacing-kapwa-sm);
-    padding-right: var(--spacing-kapwa-sm);
-  }
-  .kapwa-px-md {
-    padding-left: var(--spacing-kapwa-md);
-    padding-right: var(--spacing-kapwa-md);
-  }
-  .kapwa-px-lg {
-    padding-left: var(--spacing-kapwa-lg);
-    padding-right: var(--spacing-kapwa-lg);
-  }
-  .kapwa-px-xl {
-    padding-left: var(--spacing-kapwa-xl);
-    padding-right: var(--spacing-kapwa-xl);
-  }
-  .kapwa-px-2xl {
-    padding-left: var(--spacing-kapwa-2xl);
-    padding-right: var(--spacing-kapwa-2xl);
-  }
-  .kapwa-px-3xl {
-    padding-left: var(--spacing-kapwa-3xl);
-    padding-right: var(--spacing-kapwa-3xl);
-  }
+@utility kapwa-px-3xs {
+  padding-left: var(--spacing-kapwa-3xs);
+  padding-right: var(--spacing-kapwa-3xs);
+}
+@utility kapwa-px-2xs {
+  padding-left: var(--spacing-kapwa-2xs);
+  padding-right: var(--spacing-kapwa-2xs);
+}
+@utility kapwa-px-xs {
+  padding-left: var(--spacing-kapwa-xs);
+  padding-right: var(--spacing-kapwa-xs);
+}
+@utility kapwa-px-sm {
+  padding-left: var(--spacing-kapwa-sm);
+  padding-right: var(--spacing-kapwa-sm);
+}
+@utility kapwa-px-md {
+  padding-left: var(--spacing-kapwa-md);
+  padding-right: var(--spacing-kapwa-md);
+}
+@utility kapwa-px-lg {
+  padding-left: var(--spacing-kapwa-lg);
+  padding-right: var(--spacing-kapwa-lg);
+}
+@utility kapwa-px-xl {
+  padding-left: var(--spacing-kapwa-xl);
+  padding-right: var(--spacing-kapwa-xl);
+}
+@utility kapwa-px-2xl {
+  padding-left: var(--spacing-kapwa-2xl);
+  padding-right: var(--spacing-kapwa-2xl);
+}
+@utility kapwa-px-3xl {
+  padding-left: var(--spacing-kapwa-3xl);
+  padding-right: var(--spacing-kapwa-3xl);
+}
 
-  .kapwa-py-3xs {
-    padding-top: var(--spacing-kapwa-3xs);
-    padding-bottom: var(--spacing-kapwa-3xs);
-  }
-  .kapwa-py-2xs {
-    padding-top: var(--spacing-kapwa-2xs);
-    padding-bottom: var(--spacing-kapwa-2xs);
-  }
-  .kapwa-py-xs {
-    padding-top: var(--spacing-kapwa-xs);
-    padding-bottom: var(--spacing-kapwa-xs);
-  }
-  .kapwa-py-sm {
-    padding-top: var(--spacing-kapwa-sm);
-    padding-bottom: var(--spacing-kapwa-sm);
-  }
-  .kapwa-py-md {
-    padding-top: var(--spacing-kapwa-md);
-    padding-bottom: var(--spacing-kapwa-md);
-  }
-  .kapwa-py-lg {
-    padding-top: var(--spacing-kapwa-lg);
-    padding-bottom: var(--spacing-kapwa-lg);
-  }
-  .kapwa-py-xl {
-    padding-top: var(--spacing-kapwa-xl);
-    padding-bottom: var(--spacing-kapwa-xl);
-  }
-  .kapwa-py-2xl {
-    padding-top: var(--spacing-kapwa-2xl);
-    padding-bottom: var(--spacing-kapwa-2xl);
-  }
-  .kapwa-py-3xl {
-    padding-top: var(--spacing-kapwa-3xl);
-    padding-bottom: var(--spacing-kapwa-3xl);
-  }
+@utility kapwa-py-3xs {
+  padding-top: var(--spacing-kapwa-3xs);
+  padding-bottom: var(--spacing-kapwa-3xs);
+}
+@utility kapwa-py-2xs {
+  padding-top: var(--spacing-kapwa-2xs);
+  padding-bottom: var(--spacing-kapwa-2xs);
+}
+@utility kapwa-py-xs {
+  padding-top: var(--spacing-kapwa-xs);
+  padding-bottom: var(--spacing-kapwa-xs);
+}
+@utility kapwa-py-sm {
+  padding-top: var(--spacing-kapwa-sm);
+  padding-bottom: var(--spacing-kapwa-sm);
+}
+@utility kapwa-py-md {
+  padding-top: var(--spacing-kapwa-md);
+  padding-bottom: var(--spacing-kapwa-md);
+}
+@utility kapwa-py-lg {
+  padding-top: var(--spacing-kapwa-lg);
+  padding-bottom: var(--spacing-kapwa-lg);
+}
+@utility kapwa-py-xl {
+  padding-top: var(--spacing-kapwa-xl);
+  padding-bottom: var(--spacing-kapwa-xl);
+}
+@utility kapwa-py-2xl {
+  padding-top: var(--spacing-kapwa-2xl);
+  padding-bottom: var(--spacing-kapwa-2xl);
+}
+@utility kapwa-py-3xl {
+  padding-top: var(--spacing-kapwa-3xl);
+  padding-bottom: var(--spacing-kapwa-3xl);
+}
 
-  .kapwa-ps-3xs {
-    padding-inline-start: var(--spacing-kapwa-3xs);
-  }
-  .kapwa-ps-2xs {
-    padding-inline-start: var(--spacing-kapwa-2xs);
-  }
-  .kapwa-ps-xs {
-    padding-inline-start: var(--spacing-kapwa-xs);
-  }
-  .kapwa-ps-sm {
-    padding-inline-start: var(--spacing-kapwa-sm);
-  }
-  .kapwa-ps-md {
-    padding-inline-start: var(--spacing-kapwa-md);
-  }
-  .kapwa-ps-lg {
-    padding-inline-start: var(--spacing-kapwa-lg);
-  }
-  .kapwa-ps-xl {
-    padding-inline-start: var(--spacing-kapwa-xl);
-  }
-  .kapwa-ps-2xl {
-    padding-inline-start: var(--spacing-kapwa-2xl);
-  }
-  .kapwa-ps-3xl {
-    padding-inline-start: var(--spacing-kapwa-3xl);
-  }
+@utility kapwa-ps-3xs {
+  padding-inline-start: var(--spacing-kapwa-3xs);
+}
+@utility kapwa-ps-2xs {
+  padding-inline-start: var(--spacing-kapwa-2xs);
+}
+@utility kapwa-ps-xs {
+  padding-inline-start: var(--spacing-kapwa-xs);
+}
+@utility kapwa-ps-sm {
+  padding-inline-start: var(--spacing-kapwa-sm);
+}
+@utility kapwa-ps-md {
+  padding-inline-start: var(--spacing-kapwa-md);
+}
+@utility kapwa-ps-lg {
+  padding-inline-start: var(--spacing-kapwa-lg);
+}
+@utility kapwa-ps-xl {
+  padding-inline-start: var(--spacing-kapwa-xl);
+}
+@utility kapwa-ps-2xl {
+  padding-inline-start: var(--spacing-kapwa-2xl);
+}
+@utility kapwa-ps-3xl {
+  padding-inline-start: var(--spacing-kapwa-3xl);
+}
 
-  .kapwa-pe-3xs {
-    padding-inline-end: var(--spacing-kapwa-3xs);
-  }
-  .kapwa-pe-2xs {
-    padding-inline-end: var(--spacing-kapwa-2xs);
-  }
-  .kapwa-pe-xs {
-    padding-inline-end: var(--spacing-kapwa-xs);
-  }
-  .kapwa-pe-sm {
-    padding-inline-end: var(--spacing-kapwa-sm);
-  }
-  .kapwa-pe-md {
-    padding-inline-end: var(--spacing-kapwa-md);
-  }
-  .kapwa-pe-lg {
-    padding-inline-end: var(--spacing-kapwa-lg);
-  }
-  .kapwa-pe-xl {
-    padding-inline-end: var(--spacing-kapwa-xl);
-  }
-  .kapwa-pe-2xl {
-    padding-inline-end: var(--spacing-kapwa-2xl);
-  }
-  .kapwa-pe-3xl {
-    padding-inline-end: var(--spacing-kapwa-3xl);
-  }
+@utility kapwa-pe-3xs {
+  padding-inline-end: var(--spacing-kapwa-3xs);
+}
+@utility kapwa-pe-2xs {
+  padding-inline-end: var(--spacing-kapwa-2xs);
+}
+@utility kapwa-pe-xs {
+  padding-inline-end: var(--spacing-kapwa-xs);
+}
+@utility kapwa-pe-sm {
+  padding-inline-end: var(--spacing-kapwa-sm);
+}
+@utility kapwa-pe-md {
+  padding-inline-end: var(--spacing-kapwa-md);
+}
+@utility kapwa-pe-lg {
+  padding-inline-end: var(--spacing-kapwa-lg);
+}
+@utility kapwa-pe-xl {
+  padding-inline-end: var(--spacing-kapwa-xl);
+}
+@utility kapwa-pe-2xl {
+  padding-inline-end: var(--spacing-kapwa-2xl);
+}
+@utility kapwa-pe-3xl {
+  padding-inline-end: var(--spacing-kapwa-3xl);
+}
 
-  .kapwa-pt-3xs {
-    padding-top: var(--spacing-kapwa-3xs);
-  }
-  .kapwa-pt-2xs {
-    padding-top: var(--spacing-kapwa-2xs);
-  }
-  .kapwa-pt-xs {
-    padding-top: var(--spacing-kapwa-xs);
-  }
-  .kapwa-pt-sm {
-    padding-top: var(--spacing-kapwa-sm);
-  }
-  .kapwa-pt-md {
-    padding-top: var(--spacing-kapwa-md);
-  }
-  .kapwa-pt-lg {
-    padding-top: var(--spacing-kapwa-lg);
-  }
-  .kapwa-pt-xl {
-    padding-top: var(--spacing-kapwa-xl);
-  }
-  .kapwa-pt-2xl {
-    padding-top: var(--spacing-kapwa-2xl);
-  }
-  .kapwa-pt-3xl {
-    padding-top: var(--spacing-kapwa-3xl);
-  }
+@utility kapwa-pt-3xs {
+  padding-top: var(--spacing-kapwa-3xs);
+}
+@utility kapwa-pt-2xs {
+  padding-top: var(--spacing-kapwa-2xs);
+}
+@utility kapwa-pt-xs {
+  padding-top: var(--spacing-kapwa-xs);
+}
+@utility kapwa-pt-sm {
+  padding-top: var(--spacing-kapwa-sm);
+}
+@utility kapwa-pt-md {
+  padding-top: var(--spacing-kapwa-md);
+}
+@utility kapwa-pt-lg {
+  padding-top: var(--spacing-kapwa-lg);
+}
+@utility kapwa-pt-xl {
+  padding-top: var(--spacing-kapwa-xl);
+}
+@utility kapwa-pt-2xl {
+  padding-top: var(--spacing-kapwa-2xl);
+}
+@utility kapwa-pt-3xl {
+  padding-top: var(--spacing-kapwa-3xl);
+}
 
-  .kapwa-pr-3xs {
-    padding-right: var(--spacing-kapwa-3xs);
-  }
-  .kapwa-pr-2xs {
-    padding-right: var(--spacing-kapwa-2xs);
-  }
-  .kapwa-pr-xs {
-    padding-right: var(--spacing-kapwa-xs);
-  }
-  .kapwa-pr-sm {
-    padding-right: var(--spacing-kapwa-sm);
-  }
-  .kapwa-pr-md {
-    padding-right: var(--spacing-kapwa-md);
-  }
-  .kapwa-pr-lg {
-    padding-right: var(--spacing-kapwa-lg);
-  }
-  .kapwa-pr-xl {
-    padding-right: var(--spacing-kapwa-xl);
-  }
-  .kapwa-pr-2xl {
-    padding-right: var(--spacing-kapwa-2xl);
-  }
-  .kapwa-pr-3xl {
-    padding-right: var(--spacing-kapwa-3xl);
-  }
+@utility kapwa-pr-3xs {
+  padding-right: var(--spacing-kapwa-3xs);
+}
+@utility kapwa-pr-2xs {
+  padding-right: var(--spacing-kapwa-2xs);
+}
+@utility kapwa-pr-xs {
+  padding-right: var(--spacing-kapwa-xs);
+}
+@utility kapwa-pr-sm {
+  padding-right: var(--spacing-kapwa-sm);
+}
+@utility kapwa-pr-md {
+  padding-right: var(--spacing-kapwa-md);
+}
+@utility kapwa-pr-lg {
+  padding-right: var(--spacing-kapwa-lg);
+}
+@utility kapwa-pr-xl {
+  padding-right: var(--spacing-kapwa-xl);
+}
+@utility kapwa-pr-2xl {
+  padding-right: var(--spacing-kapwa-2xl);
+}
+@utility kapwa-pr-3xl {
+  padding-right: var(--spacing-kapwa-3xl);
+}
 
-  .kapwa-pb-3xs {
-    padding-bottom: var(--spacing-kapwa-3xs);
-  }
-  .kapwa-pb-2xs {
-    padding-bottom: var(--spacing-kapwa-2xs);
-  }
-  .kapwa-pb-xs {
-    padding-bottom: var(--spacing-kapwa-xs);
-  }
-  .kapwa-pb-sm {
-    padding-bottom: var(--spacing-kapwa-sm);
-  }
-  .kapwa-pb-md {
-    padding-bottom: var(--spacing-kapwa-md);
-  }
-  .kapwa-pb-lg {
-    padding-bottom: var(--spacing-kapwa-lg);
-  }
-  .kapwa-pb-xl {
-    padding-bottom: var(--spacing-kapwa-xl);
-  }
-  .kapwa-pb-2xl {
-    padding-bottom: var(--spacing-kapwa-2xl);
-  }
-  .kapwa-pb-3xl {
-    padding-bottom: var(--spacing-kapwa-3xl);
-  }
+@utility kapwa-pb-3xs {
+  padding-bottom: var(--spacing-kapwa-3xs);
+}
+@utility kapwa-pb-2xs {
+  padding-bottom: var(--spacing-kapwa-2xs);
+}
+@utility kapwa-pb-xs {
+  padding-bottom: var(--spacing-kapwa-xs);
+}
+@utility kapwa-pb-sm {
+  padding-bottom: var(--spacing-kapwa-sm);
+}
+@utility kapwa-pb-md {
+  padding-bottom: var(--spacing-kapwa-md);
+}
+@utility kapwa-pb-lg {
+  padding-bottom: var(--spacing-kapwa-lg);
+}
+@utility kapwa-pb-xl {
+  padding-bottom: var(--spacing-kapwa-xl);
+}
+@utility kapwa-pb-2xl {
+  padding-bottom: var(--spacing-kapwa-2xl);
+}
+@utility kapwa-pb-3xl {
+  padding-bottom: var(--spacing-kapwa-3xl);
+}
 
-  .kapwa-pl-3xs {
-    padding-left: var(--spacing-kapwa-3xs);
-  }
-  .kapwa-pl-2xs {
-    padding-left: var(--spacing-kapwa-2xs);
-  }
-  .kapwa-pl-xs {
-    padding-left: var(--spacing-kapwa-xs);
-  }
-  .kapwa-pl-sm {
-    padding-left: var(--spacing-kapwa-sm);
-  }
-  .kapwa-pl-md {
-    padding-left: var(--spacing-kapwa-md);
-  }
-  .kapwa-pl-lg {
-    padding-left: var(--spacing-kapwa-lg);
-  }
-  .kapwa-pl-xl {
-    padding-left: var(--spacing-kapwa-xl);
-  }
-  .kapwa-pl-2xl {
-    padding-left: var(--spacing-kapwa-2xl);
-  }
-  .kapwa-pl-3xl {
-    padding-left: var(--spacing-kapwa-3xl);
-  }
+@utility kapwa-pl-3xs {
+  padding-left: var(--spacing-kapwa-3xs);
+}
+@utility kapwa-pl-2xs {
+  padding-left: var(--spacing-kapwa-2xs);
+}
+@utility kapwa-pl-xs {
+  padding-left: var(--spacing-kapwa-xs);
+}
+@utility kapwa-pl-sm {
+  padding-left: var(--spacing-kapwa-sm);
+}
+@utility kapwa-pl-md {
+  padding-left: var(--spacing-kapwa-md);
+}
+@utility kapwa-pl-lg {
+  padding-left: var(--spacing-kapwa-lg);
+}
+@utility kapwa-pl-xl {
+  padding-left: var(--spacing-kapwa-xl);
+}
+@utility kapwa-pl-2xl {
+  padding-left: var(--spacing-kapwa-2xl);
+}
+@utility kapwa-pl-3xl {
+  padding-left: var(--spacing-kapwa-3xl);
+}
 
-  /* Kapwa Spacing Utilities - Width & Height */
-  .kapwa-w-3xs {
-    width: var(--spacing-kapwa-3xs);
-  }
-  .kapwa-w-2xs {
-    width: var(--spacing-kapwa-2xs);
-  }
-  .kapwa-w-xs {
-    width: var(--spacing-kapwa-xs);
-  }
-  .kapwa-w-sm {
-    width: var(--spacing-kapwa-sm);
-  }
-  .kapwa-w-md {
-    width: var(--spacing-kapwa-md);
-  }
-  .kapwa-w-lg {
-    width: var(--spacing-kapwa-lg);
-  }
-  .kapwa-w-xl {
-    width: var(--spacing-kapwa-xl);
-  }
-  .kapwa-w-2xl {
-    width: var(--spacing-kapwa-2xl);
-  }
-  .kapwa-w-3xl {
-    width: var(--spacing-kapwa-3xl);
-  }
+/* Kapwa Spacing Utilities - Width & Height */
+@utility kapwa-w-3xs {
+  width: var(--spacing-kapwa-3xs);
+}
+@utility kapwa-w-2xs {
+  width: var(--spacing-kapwa-2xs);
+}
+@utility kapwa-w-xs {
+  width: var(--spacing-kapwa-xs);
+}
+@utility kapwa-w-sm {
+  width: var(--spacing-kapwa-sm);
+}
+@utility kapwa-w-md {
+  width: var(--spacing-kapwa-md);
+}
+@utility kapwa-w-lg {
+  width: var(--spacing-kapwa-lg);
+}
+@utility kapwa-w-xl {
+  width: var(--spacing-kapwa-xl);
+}
+@utility kapwa-w-2xl {
+  width: var(--spacing-kapwa-2xl);
+}
+@utility kapwa-w-3xl {
+  width: var(--spacing-kapwa-3xl);
+}
 
-  .kapwa-h-3xs {
-    height: var(--spacing-kapwa-3xs);
-  }
-  .kapwa-h-2xs {
-    height: var(--spacing-kapwa-2xs);
-  }
-  .kapwa-h-xs {
-    height: var(--spacing-kapwa-xs);
-  }
-  .kapwa-h-sm {
-    height: var(--spacing-kapwa-sm);
-  }
-  .kapwa-h-md {
-    height: var(--spacing-kapwa-md);
-  }
-  .kapwa-h-lg {
-    height: var(--spacing-kapwa-lg);
-  }
-  .kapwa-h-xl {
-    height: var(--spacing-kapwa-xl);
-  }
-  .kapwa-h-2xl {
-    height: var(--spacing-kapwa-2xl);
-  }
-  .kapwa-h-3xl {
-    height: var(--spacing-kapwa-3xl);
-  }
+@utility kapwa-h-3xs {
+  height: var(--spacing-kapwa-3xs);
+}
+@utility kapwa-h-2xs {
+  height: var(--spacing-kapwa-2xs);
+}
+@utility kapwa-h-xs {
+  height: var(--spacing-kapwa-xs);
+}
+@utility kapwa-h-sm {
+  height: var(--spacing-kapwa-sm);
+}
+@utility kapwa-h-md {
+  height: var(--spacing-kapwa-md);
+}
+@utility kapwa-h-lg {
+  height: var(--spacing-kapwa-lg);
+}
+@utility kapwa-h-xl {
+  height: var(--spacing-kapwa-xl);
+}
+@utility kapwa-h-2xl {
+  height: var(--spacing-kapwa-2xl);
+}
+@utility kapwa-h-3xl {
+  height: var(--spacing-kapwa-3xl);
 }
 
 @theme inline {

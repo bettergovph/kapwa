@@ -34,50 +34,52 @@ const toneMap: Record<
 > = {
   brand: {
     filled:
-      'bg-kapwa-brand-600 hover:bg-kapwa-brand-700 active:bg-kapwa-brand-800 kapwa-text-inverse',
+      'kapwa-bg-brand-default hover:kapwa-bg-brand-hover active:kapwa-bg-brand-active kapwa-text-inverse',
     outline:
-      'bg-transparent border border-kapwa-brand-600 kapwa-text-brand hover:bg-kapwa-brand-50 active:bg-kapwa-brand-100',
+      'bg-transparent border kapwa-border-brand kapwa-text-brand hover:kapwa-bg-brand-weak active:bg-kapwa-brand-100',
     ghost:
-      'bg-transparent kapwa-text-brand hover:bg-kapwa-brand-50 active:bg-kapwa-brand-100',
+      'bg-transparent kapwa-text-brand hover:kapwa-bg-brand-weak active:bg-kapwa-brand-100',
     link: 'bg-transparent kapwa-text-brand hover:kapwa-text-link-hover underline p-0 h-auto',
   },
   info: {
+    // info tokens remap to brand visually (see kapwa.css) — semantically distinct
     filled:
-      'bg-kapwa-brand-600 hover:bg-kapwa-brand-700 active:bg-kapwa-brand-800 kapwa-text-inverse',
+      'kapwa-bg-info-default hover:kapwa-bg-info-hover active:kapwa-bg-info-active kapwa-text-inverse',
     outline:
-      'bg-transparent border border-kapwa-brand-600 kapwa-text-info hover:bg-kapwa-brand-50 active:bg-kapwa-brand-100',
+      'bg-transparent border kapwa-border-info kapwa-text-info hover:kapwa-bg-info-weak active:bg-kapwa-brand-100',
     ghost:
-      'bg-transparent kapwa-text-info hover:bg-kapwa-brand-50 active:bg-kapwa-brand-100',
+      'bg-transparent kapwa-text-info hover:kapwa-bg-info-weak active:bg-kapwa-brand-100',
     link: 'bg-transparent kapwa-text-info underline p-0 h-auto',
   },
   success: {
     filled:
-      'bg-kapwa-green-600 hover:bg-kapwa-green-700 active:bg-kapwa-green-800 kapwa-text-inverse',
+      'kapwa-bg-success-default hover:kapwa-bg-success-hover active:kapwa-bg-success-active kapwa-text-inverse',
     outline:
-      'bg-transparent border border-kapwa-green-600 kapwa-text-success hover:bg-kapwa-green-50 active:bg-kapwa-green-100',
+      'bg-transparent border kapwa-border-success kapwa-text-success hover:kapwa-bg-success-weak active:bg-kapwa-green-100',
     ghost:
-      'bg-transparent kapwa-text-success hover:bg-kapwa-green-50 active:bg-kapwa-green-100',
+      'bg-transparent kapwa-text-success hover:kapwa-bg-success-weak active:bg-kapwa-green-100',
     link: 'bg-transparent kapwa-text-success underline p-0 h-auto',
   },
   warning: {
     filled:
-      'bg-kapwa-orange-600 hover:bg-kapwa-orange-700 active:bg-kapwa-orange-800 kapwa-text-inverse',
+      'kapwa-bg-warning-default hover:kapwa-bg-warning-hover active:kapwa-bg-warning-active kapwa-text-inverse',
     outline:
-      'bg-transparent border border-kapwa-orange-600 kapwa-text-warning hover:bg-kapwa-orange-50 active:bg-kapwa-orange-100',
+      'bg-transparent border kapwa-border-warning kapwa-text-warning hover:kapwa-bg-warning-weak active:bg-kapwa-orange-100',
     ghost:
-      'bg-transparent kapwa-text-warning hover:bg-kapwa-orange-50 active:bg-kapwa-orange-100',
+      'bg-transparent kapwa-text-warning hover:kapwa-bg-warning-weak active:bg-kapwa-orange-100',
     link: 'bg-transparent kapwa-text-warning underline p-0 h-auto',
   },
   danger: {
     filled:
-      'bg-kapwa-red-700 hover:bg-kapwa-red-800 active:bg-kapwa-red-900 kapwa-text-inverse',
+      'kapwa-bg-danger-default hover:kapwa-bg-danger-hover active:kapwa-bg-danger-active kapwa-text-inverse',
     outline:
-      'bg-transparent border border-kapwa-red-700 kapwa-text-danger hover:bg-kapwa-red-50 active:bg-kapwa-red-100',
+      'bg-transparent border kapwa-border-danger kapwa-text-danger hover:kapwa-bg-danger-weak active:bg-kapwa-red-100',
     ghost:
-      'bg-transparent kapwa-text-danger hover:bg-kapwa-red-50 active:bg-kapwa-red-100',
+      'bg-transparent kapwa-text-danger hover:kapwa-bg-danger-weak active:bg-kapwa-red-100',
     link: 'bg-transparent kapwa-text-danger underline p-0 h-auto',
   },
   neutral: {
+    // No semantic bg tokens for neutral — using @theme primitives
     filled:
       'bg-kapwa-gray-50 hover:bg-kapwa-gray-100 active:bg-kapwa-gray-200 kapwa-text-strong',
     outline:
