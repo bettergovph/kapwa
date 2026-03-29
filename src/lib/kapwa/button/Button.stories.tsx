@@ -5,183 +5,88 @@ const meta: Meta<typeof Button> = {
   title: 'Elements/Button',
   component: Button,
   tags: ['autodocs'],
-  parameters: {
-    layout: 'centered',
-    docs: {
-      description: {
-        component:
-          'A reusable button component with multiple color variants built with design system tokens and Tailwind CSS.',
-      },
-    },
-  },
+  parameters: { layout: 'centered' },
   argTypes: {
     children: { control: 'text' },
-    disabled: { control: 'boolean' },
-    onClick: { action: 'clicked' },
     variant: {
       control: 'select',
-      options: ['primary', 'secondary', 'outline', 'ghost', 'link'],
+      options: ['primary', 'outline', 'ghost', 'link'],
+    },
+    tone: {
+      control: 'select',
+      options: ['brand', 'info', 'success', 'warning', 'danger', 'neutral'],
     },
     size: { control: 'select', options: ['sm', 'md', 'lg'] },
     fullWidth: { control: 'boolean' },
     isLoading: { control: 'boolean' },
+    disabled: { control: 'boolean' },
   },
 };
 
 export default meta;
 type Story = StoryObj<typeof Button>;
 
-export const Primary: Story = {
-  args: {
-    children: 'Primary Button',
-    variant: 'primary',
-  },
-  parameters: {
-    docs: {
-      description: {
-        story:
-          'The primary button variant should be used for the main call-to-action on a page. It uses the primary brand color and has the highest visual prominence to guide users toward the most important action.',
-      },
-    },
-  },
+export const Default: Story = {
+  args: { children: 'Button', variant: 'primary', tone: 'brand' },
 };
 
-export const Secondary: Story = {
-  args: {
-    children: 'Secondary Button',
-    variant: 'secondary',
-  },
-  parameters: {
-    docs: {
-      description: {
-        story:
-          'The secondary button variant is used for supporting actions that are less critical than the primary action. It has a subtle appearance with an outline style that provides clear interaction feedback without competing with primary buttons.',
-      },
-    },
-  },
+export const Variants: Story = {
+  render: () => (
+    <div className='flex flex-wrap items-center gap-3'>
+      <Button variant='primary'>Primary</Button>
+      <Button variant='outline'>Outline</Button>
+      <Button variant='ghost'>Ghost</Button>
+      <Button variant='link'>Link</Button>
+    </div>
+  ),
 };
 
-export const Disabled: Story = {
-  args: {
-    children: 'Disabled Button',
-    disabled: true,
-    variant: 'primary',
-  },
-  parameters: {
-    docs: {
-      description: {
-        story:
-          'The disabled state prevents user interaction and provides visual feedback that the button is currently unavailable. Use this state when an action cannot be performed due to form validation, loading states, or insufficient permissions. The button maintains its semantic meaning while being visually muted.',
-      },
-    },
-  },
+export const Tones: Story = {
+  render: () => (
+    <div className='flex flex-col gap-3'>
+      {(['primary', 'outline', 'ghost'] as const).map(variant => (
+        <div key={variant} className='flex flex-wrap items-center gap-3'>
+          {(
+            [
+              'brand',
+              'info',
+              'success',
+              'warning',
+              'danger',
+              'neutral',
+            ] as const
+          ).map(tone => (
+            <Button key={tone} variant={variant} tone={tone}>
+              {tone.charAt(0).toUpperCase() + tone.slice(1)}
+            </Button>
+          ))}
+        </div>
+      ))}
+    </div>
+  ),
 };
 
-export const Outline: Story = {
-  args: {
-    children: 'Outline Button',
-    variant: 'outline',
-  },
-  parameters: {
-    docs: {
-      description: {
-        story:
-          'The outline button variant provides a subtle alternative to filled buttons. It uses a border with transparent background, making it perfect for secondary actions or when you need a lighter visual treatment that still maintains clear boundaries.',
-      },
-    },
-  },
+export const Sizes: Story = {
+  render: () => (
+    <div className='flex items-center gap-3'>
+      <Button size='sm'>Small</Button>
+      <Button size='md'>Medium</Button>
+      <Button size='lg'>Large</Button>
+    </div>
+  ),
 };
 
-export const Ghost: Story = {
-  args: {
-    children: 'Ghost Button',
-    variant: 'ghost',
-  },
-  parameters: {
-    docs: {
-      description: {
-        story:
-          'The ghost button variant has a completely transparent background until hovered. It provides the most subtle button treatment, ideal for tertiary actions, navigation elements, or when you want minimal visual impact while maintaining interactivity.',
-      },
-    },
-  },
-};
-
-export const Link: Story = {
-  args: {
-    children: 'Link Button',
-    variant: 'link',
-  },
-  parameters: {
-    docs: {
-      description: {
-        story:
-          'The link button variant appears as a text link with underline on hover. Use this for actions that should feel like navigation or when you want button functionality with the appearance of a hyperlink.',
-      },
-    },
-  },
-};
-
-export const Small: Story = {
-  args: {
-    children: 'Small Button',
-    variant: 'primary',
-    size: 'sm',
-  },
-  parameters: {
-    docs: {
-      description: {
-        story:
-          'The small size variant is perfect for compact interfaces, table actions, or when space is limited. It maintains readability while reducing the visual footprint.',
-      },
-    },
-  },
-};
-
-export const Large: Story = {
-  args: {
-    children: 'Large Button',
-    variant: 'primary',
-    size: 'lg',
-  },
-  parameters: {
-    docs: {
-      description: {
-        story:
-          'The large size variant provides extra prominence for important actions. Use it for hero sections, form submissions, or when you need to draw significant attention to an action.',
-      },
-    },
-  },
+export const States: Story = {
+  render: () => (
+    <div className='flex flex-wrap items-center gap-3'>
+      <Button>Default</Button>
+      <Button isLoading>Loading</Button>
+      <Button disabled>Disabled</Button>
+    </div>
+  ),
 };
 
 export const FullWidth: Story = {
-  args: {
-    children: 'Full Width Button',
-    variant: 'primary',
-    fullWidth: true,
-  },
-  parameters: {
-    docs: {
-      description: {
-        story:
-          'The full width variant stretches the button to fill its container. This is commonly used in mobile interfaces, forms, or cards where you want the button to span the entire available width.',
-      },
-    },
-  },
-};
-
-export const Loading: Story = {
-  args: {
-    children: 'Loading Button',
-    variant: 'primary',
-    isLoading: true,
-  },
-  parameters: {
-    docs: {
-      description: {
-        story:
-          'The loading state shows a spinner and disables interaction while an async operation is in progress. This provides clear feedback to users that their action is being processed and prevents duplicate submissions.',
-      },
-    },
-  },
+  args: { children: 'Full Width Button', fullWidth: true },
+  parameters: { layout: 'padded' },
 };

@@ -154,7 +154,7 @@
   --color-kapwa-text-success: var(--color-kapwa-green-600);
   --color-kapwa-text-danger: var(--color-kapwa-red-600);
   --color-kapwa-text-warning: var(--color-kapwa-orange-600);
-  --color-kapwa-text-info: var(--color-kapwa-blue-600);
+  --color-kapwa-text-info: var(--color-kapwa-brand-600);
 
   --color-kapwa-text-accent-purple: var(--color-kapwa-purple-700);
   --color-kapwa-text-accent-green: var(--color-kapwa-green-700);
@@ -184,10 +184,10 @@
   --color-kapwa-bg-brand-active: var(--color-kapwa-brand-800);
   --color-kapwa-bg-brand-weak: var(--color-kapwa-brand-50);
 
-  --color-kapwa-bg-info-default: var(--color-kapwa-blue-600);
-  --color-kapwa-bg-info-hover: var(--color-kapwa-blue-700);
-  --color-kapwa-bg-info-active: var(--color-kapwa-blue-800);
-  --color-kapwa-bg-info-weak: var(--color-kapwa-blue-50);
+  --color-kapwa-bg-info-default: var(--color-kapwa-brand-600);
+  --color-kapwa-bg-info-hover: var(--color-kapwa-brand-700);
+  --color-kapwa-bg-info-active: var(--color-kapwa-brand-800);
+  --color-kapwa-bg-info-weak: var(--color-kapwa-brand-50);
 
   --color-kapwa-bg-danger-default: var(--color-kapwa-red-700);
   --color-kapwa-bg-danger-hover: var(--color-kapwa-red-800);
@@ -232,7 +232,7 @@
   --color-kapwa-border-success: var(--color-kapwa-green-600);
   --color-kapwa-border-danger: var(--color-kapwa-red-700);
   --color-kapwa-border-warning: var(--color-kapwa-orange-600);
-  --color-kapwa-border-info: var(--color-kapwa-blue-600);
+  --color-kapwa-border-info: var(--color-kapwa-brand-600);
 
   /* Kapwa Font Families */
   --font-kapwa-sans:
