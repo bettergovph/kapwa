@@ -4,30 +4,76 @@ _Design system for Government Portals used by BetterGov.ph_
 
 ## Installation
 
-1. Install Tailwind CSS using the adapter for your bundler (for example, [`@tailwindcss/vite`](https://tailwindcss.com/docs/installation/using-vite) or [`@tailwindcss/postcss`](https://tailwindcss.com/docs/installation)). Follow the Tailwind docs to configure your build tool.
+### Option 1: Using shadcn CLI (Recommended)
+
+The easiest way to add Kapwa components to your project is using the shadcn CLI:
+
+1. [Install Tailwind CSS v4](https://tailwindcss.com/docs/installation)
+
+2. Initialize shadcn in your project:
+
+   ```bash
+   npx shadcn@latest init
+   ```
+
+3. Add the Kapwa registry to your `components.json`:
+
+   ```json
+   {
+     "registries": {
+       "kapwa": "https://kapwa.bettergov.ph/r/{name}.json"
+     }
+   }
+   ```
+
+4. Browse available Kapwa components:
+
+   ```bash
+   npx shadcn@latest list kapwa
+   ```
+
+5. Add components to your project:
+
+   ```bash
+   # Add a specific component
+   npx shadcn@latest add kapwa:button
+
+   # Add multiple components
+   npx shadcn@latest add kapwa:button kapwa:card kapwa:input
+   ```
+
+6. View component details:
+
+   ```bash
+   npx shadcn@latest view kapwa:button
+   ```
+
+### Option 2: Manual Installation
+
+1. [Install Tailwind CSS v4](https://tailwindcss.com/docs/installation)
 
 2. Install Kapwa
 
-   ```
+   ```bash
    npm install @bettergov/kapwa
    ```
 
 3. Install tw-animate-css for animation (Optional)
 
-   ```
+   ```bash
    npm install -D tw-animate-css
    ```
 
 4. Add Kapwa in your CSS entrypoint
 
-   ```diff
+   ```css
    // index.css
 
    @import 'tailwindcss';
    @import 'tw-animate-css';
 
-   + @source '../node_modules/@bettergov/kapwa/dist';
-   + @import "@bettergov/kapwa/styles";
+   @source './node_modules/@bettergov/kapwa';
+   @import '@bettergov/kapwa/kapwa.css';
    ```
 
    > _Without the @source you can't use @bettergov/kapwa's tailwind classes (i.e. kapwa colors, spacing, and others)_
@@ -78,23 +124,21 @@ It's better to have consumers load Kapwa's fonts themselves because:
    }
    ```
 
-   ```ts
-    // Finally, add the CSS variable to your Tailwind CSS file
-    @import 'tailwindcss';
-    @import 'tw-animate-css';
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;600&display=swap');
+   ```css
+   // Finally, add the CSS variable to your Tailwind CSS file
+   @import 'tailwindcss';
+   @import 'tw-animate-css';
 
+   @source './node_modules/@bettergov/kapwa';
+   @import '@bettergov/kapwa/kapwa.css';
 
-    @source '../node_modules/@bettergov/kapwa/dist';
-    @import "@bettergov/kapwa/styles";
-
-    @theme inline {
-      --font-sans: var(--font-kapwa-sans);
-      --font-mono: var(--font-kapwa-mono);
-    }
+   @theme inline {
+     --font-sans: var(--font-kapwa-sans);
+     --font-mono: var(--font-kapwa-mono);
+   }
    ```
 
-   **Vite / CRA / plain React**
+2. **Vite / CRA / plain React**
 
    ```css
    /* src/fonts.css */
@@ -126,7 +170,7 @@ It's better to have consumers load Kapwa's fonts themselves because:
 
    > Bind `--font-kapwa-sans` and `--font-kapwa-mono` in your Tailwind config (e.g., `fontFamily: { sans: ['var(--font-kapwa-sans)'], mono: ['var(--font-kapwa-mono)'] }`) so Kapwa utilities pick up the same typography tokens.
 
-**_That's it! You've sucessfully setup Kapwa! 🥳_**
+**_That's it! You've successfully setup Kapwa! 🥳_**
 
 ---
 
@@ -134,7 +178,7 @@ It's better to have consumers load Kapwa's fonts themselves because:
 
 ## Our Mission
 
-## Features
+Please refer to [Design Values](https://github.com/bettergovph/kapwa/wiki/Design-Values).
 
 ## Join Us as a Volunteer
 

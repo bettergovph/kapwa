@@ -1,3 +1,9 @@
+## [1.2.5](https://github.com/bettergovph/kapwa/compare/v1.2.4...v1.2.5) (2026-04-17)
+
+### Bug Fixes
+
+- **styles:** clean up index.css and kapwa.css ([fe3777f](https://github.com/bettergovph/kapwa/commit/fe3777f1f1ccb98ef62949244b6b550cbd553128))
+
 ## [1.2.4](https://github.com/bettergovph/kapwa/compare/v1.2.3...v1.2.4) (2026-03-01)
 
 ### Bug Fixes
