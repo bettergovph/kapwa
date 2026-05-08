@@ -19,9 +19,27 @@ import SEO from '@ui/SEO';
 
 const Blocks: React.FC = () => {
   const searchResults: ListSectionItem[] = [
-    { id: 1, title: 'National ID Registration', category: 'Citizenship' },
-    { id: 2, title: 'Business Permit Application', category: 'Business' },
-    { id: 3, title: 'Passport Renewal', category: 'Travel' },
+    {
+      id: 1,
+      title: 'National ID Registration',
+      category: 'Citizenship',
+      description:
+        'The Philippine Identification System (PhilSys) provides a single national ID for all Filipino citizens and resident aliens. Registration is free and can be done at any PSA registration center or at designated sites in your municipality.',
+    },
+    {
+      id: 2,
+      title: 'Business Permit Application',
+      category: 'Business',
+      description:
+        'Secure your business permit from your local government unit (LGU). Requirements include a filled-out application form, proof of business address, DTI or SEC registration, and barangay clearance.',
+    },
+    {
+      id: 3,
+      title: 'Passport Renewal',
+      category: 'Travel',
+      description:
+        'Renew your Philippine passport through DFA online appointment. Bring your current passport, PSA birth certificate, and one valid government-issued ID. Processing takes 12 working days for regular and 6 for expedited.',
+    },
   ];
 
   const tableData: TableDataItem[] = [
