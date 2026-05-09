@@ -6,6 +6,7 @@ type ListSectionItem = {
   id: number;
   title: string;
   category: string;
+  description?: string;
 };
 
 type ListsSectionProps = {
