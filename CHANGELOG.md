@@ -1,3 +1,9 @@
+## [1.4.1](https://github.com/bettergovph/kapwa/compare/v1.4.0...v1.4.1) (2026-06-02)
+
+### Bug Fixes
+
+- support higher range ([fa7caf0](https://github.com/bettergovph/kapwa/commit/fa7caf03dccb6d7dff6f526a8fde9f19de4d16dc))
+
 # [1.4.0](https://github.com/bettergovph/kapwa/compare/v1.3.0...v1.4.0) (2026-05-09)
 
 ### Features
