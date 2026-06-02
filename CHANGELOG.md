@@ -1,3 +1,9 @@
+# [1.4.0](https://github.com/bettergovph/kapwa/compare/v1.3.0...v1.4.0) (2026-05-09)
+
+### Features
+
+- **list:** add optional description with collapsible disclosure ([39976b8](https://github.com/bettergovph/kapwa/commit/39976b8eae322250d9cf353ab2e79bcc7c7425d1))
+
 # [1.3.0](https://github.com/bettergovph/kapwa/compare/v1.2.5...v1.3.0) (2026-04-27)
 
 ### Bug Fixes
