@@ -55,7 +55,8 @@ const copyThemeCssPlugin = (): PluginOption => ({
 const entryPoints = glob
   .sync('./src/lib/kapwa/**/index.ts?(x)')
   .reduce((acc, filePath) => {
-    const pathParts = filePath.split('/');
+    const normalizedPath = filePath.replace(/\\/g, '/');
+    const pathParts = normalizedPath.split('/');
     const relevantParts = pathParts.slice(3, -1);
 
     let isValidEntry = false;
@@ -75,7 +76,7 @@ const entryPoints = glob
       return acc;
     }
 
-    const outPath = filePath.replace(/^src\/lib\/kapwa\//, 'kapwa/');
+    const outPath = normalizedPath.replace(/^src\/lib\/kapwa\//, 'kapwa/');
     acc[outPath] = filePath;
     return acc;
   }, {});
