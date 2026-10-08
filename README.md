@@ -145,6 +145,24 @@ For the full adoption guide, read [Installation](./docs/guides/installation.md).
 
 ---
 
+## Resources
+
+- [Figma: KAPWA Styles](https://www.figma.com/design/GbxLRVkVHA6JFlcBULZKRQ/KAPWA--Styles) for the design styles and tokens
+- [Wiki](https://github.com/bettergovph/kapwa/wiki) for design values and project notes
+- [Using Storybook](./docs/guides/using-storybook.md) for the component reference
+
+### Storybook and the a11y tab
+
+Storybook is the component reference for Kapwa. Start it locally with:
+
+```bash
+npm run dev:storybook
+```
+
+Then open [http://localhost:6006](http://localhost:6006). Every story has an **Accessibility** (a11y) tab, powered by `@storybook/addon-a11y`, that runs axe-core checks against the rendered component and lists any violations. Check it whenever you add or change a component.
+
+---
+
 ## Why We're Building This Project
 
 ## Our Mission

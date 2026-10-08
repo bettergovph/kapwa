@@ -10,4 +10,6 @@ This site explains what Kapwa is, why it exists, and how teams can adopt or cont
 
 - [Journey](./journey.md)
 
-TODO: add contributors' github here and links
+## Contributors
+
+Kapwa is built by volunteers. See everyone who has contributed on the [contributors graph](https://github.com/bettergovph/kapwa/graphs/contributors), and read the [Contributing guide](/guides/contributing) if you would like to join them.
