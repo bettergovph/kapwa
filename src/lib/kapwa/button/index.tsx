@@ -14,6 +14,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 const Button = ({
   children,
   className,
+  type = 'button',
   variant = 'primary',
   size = 'md',
   fullWidth = false,
@@ -45,6 +46,7 @@ const Button = ({
 
   return (
     <button
+      type={type}
       className={cn(
         'inline-flex items-center justify-center rounded-md font-medium transition-colors',
         'focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-2',
